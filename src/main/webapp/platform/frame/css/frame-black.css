@@ -1,0 +1,94 @@
+
+/*
+ * 首页功能样式
+ */
+  /*左菜单栏底色*/
+.layui-bg-black{
+ 	background-color:#ecf4ff!important;
+ }
+.layui-header{
+ 	height:55px;
+ }
+.layui-nav .layui-nav-item{
+ 	line-height:55px;
+ }
+ /*顶部header文本色*/
+.layui-nav .layui-nav-item a{
+ 	color: rgba(255,255,255,.7);
+ }
+  /*顶部header下拉菜单文本色*/
+.layui-nav .layui-nav-child a{
+ 	color:#333333;
+ }
+.layui-layout-admin .layui-side,.layui-layout-admin .layui-body{
+	top:55px;
+}
+/*顶部header背景色*/
+.layui-layout-admin .layui-header{
+	background:#363b3f;
+}
+.layui-layout-admin .layui-logo{color:#ffffff;}
+/*一级菜单底边线色*/
+.layui-nav .layui-this:after, .layui-nav-bar, .layui-nav-tree .layui-nav-itemed:after{
+	background:#15a4fc;
+}
+/*二级菜单左边线色*/
+.layui-nav-tree .layui-nav-bar{
+	background-color:#15a4fc;
+}
+/*二级菜单背景色*/
+.layui-nav{
+	background:#424a4d;
+}
+/*三级菜单背景色*/
+.layui-nav-itemed .layui-nav-child{
+	background-color:#363b3f!important;
+}
+/*二级菜单文本色、边框色*/
+.layui-nav-tree .layui-nav-item a{
+	color:#ffffff!important;
+	border-top:1px solid #474f52;
+	border-bottom:1px solid #373d41;
+	line-height:45px;
+}
+/*三级菜单文本色*/
+.layui-nav-tree .layui-nav-child a{
+	color:#999999!important;
+	border-top:none;
+	border-bottom:none;
+	line-height:40px;
+}
+/*二级、三级菜单hover背景色*/
+.layui-nav-tree .layui-nav-item a:hover{
+	background-color:#424a4d;
+	color:#ffffff!important;
+}
+.layui-nav-tree .layui-nav-child dd.layui-this, .layui-nav-tree .layui-nav-child dd.layui-this a, .layui-nav-tree .layui-this, .layui-nav-tree .layui-this>a{
+	/* background-color:#e3e8ec; */
+	background-color:#4fc9ce;
+	/* color:#4184e3!important; */
+	color:#ffffff!important;
+}
+.layui-nav .layui-nav-more{
+	top:26px;
+}
+.layui-nav .layui-nav-mored{
+	top:20px;
+}
+/*二级菜单右-下三角图标*/
+.layui-nav-tree .layui-nav-more{
+	top:20px;
+	border-color:#15a4fc transparent transparent;
+}
+/*二级菜单右-上三角图标*/
+.layui-nav-itemed .layui-nav-more{
+	top:13px;
+	border-color:transparent transparent #15a4fc;
+}
+.layui-body{
+	border-left:1px solid #d2d7db;
+}
+/*三级菜单选中背景色*/
+.layui-nav .layui-nav-child dd.layui-this a, .layui-nav-child dd.layui-this{
+	background-color:#15a4fc;
+}

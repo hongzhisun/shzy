@@ -1,0 +1,4 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- mc-framework/登录页/js -->
+		<script mc-theme="js" type="text/javascript" src="resources/themes/<%=themeId%>/login/js/platform-login.js"></script>

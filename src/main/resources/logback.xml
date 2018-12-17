@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="10 seconds">
+	<contextName>newtouch-mc</contextName>
+	<property name="logroot" value="mc-logroot" />
+
+	<root level="INFO">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<!-- 默认控制台输出, 避免使用System.out -->
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<Encoding>UTF-8</Encoding>
+		<!-- encoder 默认配置为PatternLayoutEncoder -->
+		<encoder>
+			<pattern>%contextName: %d{yyyy-MM-dd HH:mm:ss}: [%thread] %-5level %logger{36} - %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<logger name="com.newtouch.cloud.platform.interceptor.LoginCheckInterceptor" additivity="false" level="DEBUG">
+<!-- 		<appender-ref ref="STDOUT" /> -->
+	</logger>
+
+
+	<!-- 工作流引擎日志 -->
+	<appender name="wf_logger" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+		<Encoding>UTF-8</Encoding>
+		<Prudent>true</Prudent> 
+		<layout class="ch.qos.logback.classic.PatternLayout">    
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss}: %msg%n</Pattern> 
+		</layout> 
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">    
+			<FileNamePattern>${logroot}/wf/wf_logger_%d{yyyy-MM-dd}.log</FileNamePattern> 
+		</rollingPolicy>
+	</appender>
+	<appender name="wf_dao_appender" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+		<Encoding>UTF-8</Encoding>
+		<Prudent>true</Prudent> 
+		<layout class="ch.qos.logback.classic.PatternLayout">    
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss}: %msg%n</Pattern> 
+		</layout> 
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">    
+			<FileNamePattern>${logroot}/wf/wf_dao_logger_%d{yyyy-MM-dd}.log</FileNamePattern> 
+		</rollingPolicy>
+	</appender>
+	<appender name="wf_statmentres_appender" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+		<Encoding>UTF-8</Encoding>
+		<Prudent>true</Prudent> 
+		<layout class="ch.qos.logback.classic.PatternLayout">    
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss}: %msg%n</Pattern> 
+		</layout> 
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">    
+			<FileNamePattern>${logroot}/wf/wf_statmentres_logger_%d{yyyy-MM-dd}.log</FileNamePattern> 
+		</rollingPolicy>
+	</appender>
+	<appender name="wf_convertsql_appender" class="ch.qos.logback.core.rolling.RollingFileAppender">  
+		<Encoding>UTF-8</Encoding>
+		<Prudent>true</Prudent> 
+		<layout class="ch.qos.logback.classic.PatternLayout">    
+			<Pattern>%d{yyyy-MM-dd HH:mm:ss}: %msg%n</Pattern> 
+		</layout> 
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">    
+			<FileNamePattern>${logroot}/wf/wf_convertsql_logger_%d{yyyy-MM-dd}.log</FileNamePattern> 
+		</rollingPolicy>
+	</appender>
+
+	<logger name="wf_logger" additivity="false" level="DEBUG">
+		<appender-ref ref="wf_appender" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="wf_dao_logger" additivity="false" level="DEBUG">
+		<appender-ref ref="wf_dao_appender" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="wf_statmentres_logger" additivity="false" level="DEBUG">
+		<appender-ref ref="wf_statmentres_appender" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="wf_convertsql_logger" additivity="false" level="DEBUG">
+		<appender-ref ref="wf_convertsql_appender" />
+		<appender-ref ref="STDOUT" />
+	</logger>
+</configuration>

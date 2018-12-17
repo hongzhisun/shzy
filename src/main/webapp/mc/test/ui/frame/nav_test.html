@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	    <title>uistudy首页</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layui/2.1.5/css/layui.css"/>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/layui.js"></script>
+	</head>
+	<body>
+		<ul class="layui-nav" lay-filter="">
+			<li class="layui-nav-item"><a href="">最新活动</a></li>
+			<li class="layui-nav-item layui-this"><a href="">产品</a></li>
+			<li class="layui-nav-item"><a href="">大数据</a></li>
+			<li class="layui-nav-item"><a href="javascript:;">解决方案</a>
+				<dl class="layui-nav-child">
+					<!-- 二级菜单 -->
+					<dd>
+						<a href="">移动模块</a>
+					</dd>
+					<dd>
+						<a href="">后台模版</a>
+					</dd>
+					<dd>
+						<a href="">电商平台</a>
+					</dd>
+				</dl>
+			</li>
+			<li class="layui-nav-item"><a href="">社区</a></li>
+			<li class="layui-nav-item"><a href="">模块1</a></li>
+			<li class="layui-nav-item"><a href="">模块2</a></li>
+			<li class="layui-nav-item"><a href="">模块3</a></li>
+			<li class="layui-nav-item"><a href="">模块4</a></li>
+		</ul>
+		<script type="text/javascript">
+			layui.use('element', function()
+			{
+				var element = layui.element;
+			});
+		</script>
+	</body>
+</html>

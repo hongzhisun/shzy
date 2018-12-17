@@ -1,0 +1,40 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!--
+			mc框架核心js
+		-->
+
+		<!-- mc框架通用js库 -->
+		<script type="text/javascript" src="mc/common/core/mcloud-core.js"></script>
+
+		<!-- js工具类 -->
+		<script type="text/javascript" src="mc/common/util/array_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/assert_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/condition.js"></script>
+		<script type="text/javascript" src="mc/common/util/console_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/date_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/format_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/form_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/grid_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/guid_util.js"></script>
+
+<!--
+ 		<script type="text/javascript" src="mc/common/util/globalparam_util.js"></script>
+-->
+		<script type="text/javascript" src="mc/common/util/hex_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/layout_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/mask_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/msg_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/number_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/render_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/security_util.js"></script>
+		<script type="text/javascript" src="mc/common/util/string_util.js"></script>
+<!--
+		<script type="text/javascript" src="mc/common/util/token_util.js"></script>
+-->
+		<script type="text/javascript" src="mc/common/util/tree_util.js"></script>
+
+		<script type="text/javascript" src="mc/common/data/map.js"></script>
+		<script type="text/javascript" src="mc/common/data/datastore.js"></script>
+
+		<!-- 第三方类库 -->
+		<script type="text/javascript" src="thirdparty/underscore/1.8.3/underscore-min.js"></script>

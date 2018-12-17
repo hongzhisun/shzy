@@ -1,0 +1,1 @@
+mc.namespace("sm.const");

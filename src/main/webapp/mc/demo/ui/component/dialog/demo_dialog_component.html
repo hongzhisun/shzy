@@ -1,0 +1,96 @@
+<!-- 对话框组件html片段 -->
+
+<!-- 内部只有一个表单容器，并作为center区域填充 -->
+<div class="ui-layout-center mc-form-container">
+	<table class="mc-form-table" >
+		<colgroup>
+			<col style="width: 120px;" />
+			<col style="width: 200px;" />
+			<col />
+		</colgroup>
+		<tr>
+			<th title="提示: 文本输入">文本输入</th>
+			<td>
+				<input id="inputText" type="text" class="mc-input" title="请输入文本..." placeholder="请输入文本...">
+			</td>
+		</tr>
+		<tr>
+			<th title="提示: 数值输入">数值输入*</th>
+			<td>
+				<input id="inputNumber" type="text" class="mc-input mc-number" title="请输入数值..." placeholder="请输入数值...">
+			</td>
+		</tr>
+		<tr>
+			<th title="提示: 金额输入">金额输入*</th>
+			<td>
+				<input id="inputMoney" type="text" class="mc-input mc-money" title="请输入金额..." placeholder="请输入金额...">
+			</td>
+		</tr>
+		<tr>
+			<th title="提示: 日期选择">开始日期选择</th>
+			<td>
+				<input id="dateStart" type="text" class="mc-input" title="请选择开始日期..." placeholder="请选择开始日期...">
+			</td>
+		</tr>
+		<tr>
+			<th title="提示：下拉框">下拉框</th>
+			<td>
+				<select id="cmbProvince"><option value="">请选择...</option></select>
+			</td>
+		</tr>
+		<tr>
+			<th title="提示: 弹出框选择">弹出框选择</th>
+			<td>
+				<input id="fieldProvince" type="text" class="mc-input" title="请选择省份..." placeholder="请选择省份...">
+			</td>
+		</tr>
+		<tr>
+			<th title="提示：性别">性别</th>
+			<td>
+				<div class="mc-radio-group">
+					<div class="mc-radio">
+						<input id="radio1" type="radio" name="sex" value="0">
+						<label for="radio1">男</label>
+					</div>
+					<div class="mc-radio">
+						<input id="radio2" type="radio" name="sex" value="1">
+						<label for="radio2">女</label>
+					</div>
+					<div class="mc-radio">
+						<input id="radio3" type="radio" name="sex" value="-1">
+						<label for="radio3">其他</label>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th title="提示：品牌">品牌</th>
+			<td>
+				<div class="mc-checkbox-group">
+					<div class="mc-checkbox">
+						<input id="checkbox3" type="checkbox" name="brand" value="1">
+						<label for="checkbox3">苹果</label>
+					</div>
+					<div class="mc-checkbox">
+						<input id="checkbox4" type="checkbox" name="brand" value="2">
+						<label for="checkbox4">三星</label>
+					</div>
+					<div class="mc-checkbox">
+						<input id="checkbox5" type="checkbox" name="brand" value="3">
+						<label for="checkbox5">华为</label>
+					</div>
+					<div class="mc-checkbox">
+						<input id="checkbox6" type="checkbox" name="brand" value="4">
+						<label for="checkbox6">小米</label>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th title="提示：备注">备注</th>
+			<td>
+				<textarea class="mc-textarea"></textarea>
+			</td>
+		</tr>
+	</table>
+</div>

@@ -1,0 +1,45 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- sm-component -->
+
+		<!-- sm-component-combobox -->
+		<script type="text/javascript" src="mc/sm/component/combobox/SMConstComboBox.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/combobox/UnitComboBox.js"></script>
+		<script type="text/javascript" src="mc/sm/component/combobox/DeptComboBox.js"></script>
+		<script type="text/javascript" src="mc/sm/component/combobox/PostComboBox.js"></script>
+		<script type="text/javascript" src="mc/sm/component/combobox/TeamComboBox.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/combobox/UserComboBox.js"></script>
+		<script type="text/javascript" src="mc/sm/component/combobox/RoleComboBox.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/combobox/ModuleComboBox.js"></script>
+		<script type="text/javascript" src="mc/sm/component/combobox/MenuComboBox.js"></script>
+		<script type="text/javascript" src="mc/sm/component/combobox/DictComboBox.js"></script>
+
+		<!-- sm-component-dialog -->
+		<script type="text/javascript" src="mc/sm/component/dialog/UnitDialog.js"></script>
+		<script type="text/javascript" src="mc/sm/component/dialog/DeptDialog.js"></script>
+		<script type="text/javascript" src="mc/sm/component/dialog/PostDialog.js"></script>
+		<script type="text/javascript" src="mc/sm/component/dialog/TeamDialog.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/dialog/UserDialog.js"></script>
+		<script type="text/javascript" src="mc/sm/component/dialog/RoleDialog.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/dialog/ModuleDialog.js"></script>
+		<script type="text/javascript" src="mc/sm/component/dialog/MenuDialog.js"></script>
+		<script type="text/javascript" src="mc/sm/component/dialog/DictDialog.js"></script>
+
+		<!-- sm-component-field -->
+		<script type="text/javascript" src="mc/sm/component/field/UnitField.js"></script>
+		<script type="text/javascript" src="mc/sm/component/field/DeptField.js"></script>
+		<script type="text/javascript" src="mc/sm/component/field/PostField.js"></script>
+		<script type="text/javascript" src="mc/sm/component/field/TeamField.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/field/UserField.js"></script>
+		<script type="text/javascript" src="mc/sm/component/field/RoleField.js"></script>
+
+		<script type="text/javascript" src="mc/sm/component/field/ModuleField.js"></script>
+		<script type="text/javascript" src="mc/sm/component/field/MenuField.js"></script>
+		<script type="text/javascript" src="mc/sm/component/field/DictField.js"></script>
+		

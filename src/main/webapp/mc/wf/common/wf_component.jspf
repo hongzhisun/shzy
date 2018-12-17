@@ -1,0 +1,15 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- wf-component -->
+
+		<!-- wf-component-combobox -->
+		<script type="text/javascript" src="mc/wf/component/combobox/WfConstComboBox.js"></script>
+		<script type="text/javascript" src="mc/wf/component/combobox/ProcessTypeComboBox.js"></script>
+
+		<!-- wf-component-dialog -->
+		<script type="text/javascript" src="mc/wf/component/dialog/ProcessTypeDialog.js"></script>
+		<script type="text/javascript" src="mc/wf/component/dialog/checkhistory_dialog.js"></script>
+		<script type="text/javascript" src="mc/wf/component/dialog/processchart_dialog.js"></script>
+
+		<!-- wf-component-field -->
+		<script type="text/javascript" src="mc/wf/component/field/ProcessTypeField.js"></script>

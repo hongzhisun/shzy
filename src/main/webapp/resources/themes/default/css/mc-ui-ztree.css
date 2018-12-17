@@ -1,0 +1,28 @@
+/*
+ * mc标准样式
+ * zTree组件
+ * 版本：v1.5.0
+ * 最后更新: 2018-06-29
+ */
+.ztree {
+	margin: 0;
+	padding: 0px;
+	color: #333;
+	border: 1px;
+	border-style: solid;
+	border-color: #e6e6e6;
+	overflow-y: auto;
+	background: #ffffff;
+}
+
+.ztree * {
+	font-size: 12px;
+}
+
+.ztree li a:hover {
+	text-decoration: none;
+}
+
+.ztree li span.button {
+	background-image: url(../images/ui/mc-zTree-zTreeStandard.png);
+}

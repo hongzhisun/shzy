@@ -1,0 +1,10 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!--
+			mc框架标准版jquery核心库
+		-->
+		
+		<!-- jquery-core -->
+		<script type="text/javascript" src="jquery/jquery-core/1.12.4/jquery-1.12.4.min.js"></script>
+
+		<!-- jquery-plugins -->
+<!-- 		<script type="text/javascript" src="jquery/plugins/jquery.resize/jquery.ba-resize.min.js"></script> -->

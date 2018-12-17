@@ -1,0 +1,29 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- mc-framework/core/css -->
+
+		<!-- mc基础样式 -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-style-base.css"/>
+		<!-- mc-core样式-->
+ 		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-core.css"/>
+
+		<!-- mc-ui调整样式 -->
+		<!-- jquery-ui -->
+ 		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-jquery-ui-1.12.1.css"/>
+		<!-- jqgrid -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-jqgrid-5.2.1.css"/>
+		<!-- ztree -->
+ 		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-ztree.css"/>
+		<!-- layout -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-layout-1.4.4.css"/>
+		<!-- layui -->
+		<!-- 升级layui
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-layui-2.1.5.css"/>
+  		-->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-layui-2.2.6.css"/>
+		<!-- layer -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-layer-3.1.0.css"/>
+
+		<!-- 项目扩展样式 -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-extra.css"/>
+		

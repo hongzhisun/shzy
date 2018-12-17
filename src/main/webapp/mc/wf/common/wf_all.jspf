@@ -1,0 +1,15 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- wf-css -->
+		<link rel="stylesheet" type="text/css" href="mc/wf/resources/iconfont/iconfont.css"/>
+
+		<!-- wf-common-js -->
+		<script type="text/javascript" src="mc/wf/common/wf_const.js"></script>
+		<script type="text/javascript" src="mc/wf/common/wf_render.js"></script>
+		<script type="text/javascript" src="mc/wf/common/util/form_opertype_util.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/wf_workitem_formopen.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/wf_workitem_service.js"></script>
+
+		<!-- wf-component -->
+		<%@ include file="/mc/wf/common/wf_component.jspf"%>
+		

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-4.3.xsd">
+
+	<!-- mvc不处理静态资源请求，包括html、jsp页面、图片等 -->
+	<mvc:default-servlet-handler />
+
+	<!-- 允许跨域访问 -->
+	<mvc:cors>
+		<mvc:mapping path="/**" />
+	</mvc:cors>
+
+	<!-- 启用注解扫描 -->
+	<mvc:annotation-driven>
+		<mvc:message-converters register-defaults="true">
+			<!-- 文本字符集 -->
+			<bean class="org.springframework.http.converter.StringHttpMessageConverter">
+				<property name="writeAcceptCharset" value="false" />
+				<property name="supportedMediaTypes">
+					<list>
+						<value>text/html;charset=UTF-8</value>
+					</list>
+				</property>
+			</bean>
+			<!-- jackson日期时间序列化格式 -->
+			<bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+				<property name="objectMapper">
+					<bean class="org.springframework.http.converter.json.Jackson2ObjectMapperFactoryBean">
+						<property name="simpleDateFormat">
+							<value>yyyy-MM-dd HH:mm:ss</value>
+						</property>
+					</bean>
+				</property>
+			</bean>
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+
+	<!-- 自动装配，后续优化 -->
+	<context:component-scan base-package="com.newtouch" />
+	<context:component-scan base-package="com.shzy" />
+	<context:component-scan base-package="com.freesky" />
+	<context:component-scan base-package="Freesky.M8" />
+	<context:component-scan base-package="Freesky.SSC" />
+
+	<!-- 多个拦截器，顺序执行 -->
+	<mvc:interceptors>
+		<!-- 动态多数据源切换拦截器 -->
+		<!--
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.newtouch.cloud.platform.interceptor.DynamicDataSourceInterceptor" />
+		</mvc:interceptor>
+		-->
+		<!-- 登录状态验证拦截器 -->
+		<mvc:interceptor>
+			<mvc:mapping path="/**" />
+			<bean class="com.newtouch.cloud.platform.interceptor.LoginCheckInterceptor">
+				<!-- 过滤URL -->
+				<property name="filteURLs">
+					<list>
+						<value>/platform/security/login</value>
+						<value>/platform/security/logout</value>
+						<value>/platform/security/updatepassword</value>
+					</list>
+				</property>
+				<!-- 重登录URL -->
+				<property name="reloginURL" value="/platform/login/login.jsp" />
+				<!-- 首页URL -->
+				<property name="homeFrameURL" value="/platform/frame/frame.jsp" />
+			</bean>
+		</mvc:interceptor>
+	</mvc:interceptors>
+
+	<!-- Spring容器对象辅助类 -->
+	<bean id="SpringConfigurableApplicationContextUtil" class="com.newtouch.cloud.common.ApplicationContextUtil" />
+
+	<!-- properties配置文件加载 -->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>classpath:/mc/mc-sm.properties</value>
+		</property>
+		<property name="fileEncoding" value="utf-8" />
+	</bean> 
+
+	<!-- 支持文件上传 -->
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="104857600" />
+		<property name="maxInMemorySize" value="4096" />
+		<property name="defaultEncoding" value="UTF-8"></property>
+	</bean>
+
+	<!-- JasperReports视图解析器，支持JasperReports报表显示 -->
+	<bean id="jasperReportsViewResolver" class="org.springframework.web.servlet.view.XmlViewResolver">
+		<property name="order">
+			<value>0</value>
+		</property>
+		<property name="location">
+			<value>classpath:/spring/spring-view-jasperreports.xml</value>
+		</property>
+	</bean>
+
+	<!-- 初始化ThemeConfigFactory -->
+	<bean class="com.newtouch.cloud.common.theme.ThemeConfigFactory" />
+</beans>

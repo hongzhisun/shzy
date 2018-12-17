@@ -1,0 +1,6 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- mc-framework/工作流表单审批框架/css -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/wf/mc-wf.css"/>
+
+		

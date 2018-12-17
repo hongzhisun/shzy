@@ -1,0 +1,28 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!--
+			mc框架标准css样式表
+		-->
+
+		<!--
+			jQuery组件官方样式表
+		-->
+		<!-- jquery-ui -->
+		<link rel="stylesheet" type="text/css" href="jquery/jquery-ui/1.12.1/jquery-ui.min.css" />
+
+		<!-- jqgrid -->
+		<link rel="stylesheet" type="text/css" href="jquery/jqgrid/5.2.1/css/ui.jqgrid.css" />
+
+		<!-- ztree -->
+  		<link rel="stylesheet" type="text/css" href="jquery/ztree/3.5.29/css/zTreeStyle/zTreeStyle.css" />
+
+		<!-- layout -->
+		<link rel="stylesheet" type="text/css" href="jquery/layout/1.4.4/layout-default-latest.css"/>
+
+		<!-- layui -->
+		<!-- 	
+		<link rel="stylesheet" type="text/css" href="jquery/layui/2.1.5/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="jquery/layui/2.2.6/css/layui.css" />
+		-->
+
+		<!-- layer -->
+		<link rel="stylesheet" type="text/css" href="jquery/layer/3.1.0/theme/default/layer.css"/>

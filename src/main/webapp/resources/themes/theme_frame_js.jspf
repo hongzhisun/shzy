@@ -1,0 +1,6 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- mc-framework/首页主框架/js -->
+		<!-- layer -->
+		<script mc-theme="js" type="text/javascript" src="resources/themes/<%=themeId%>/js/mc-ui-layer.js"></script>
+		

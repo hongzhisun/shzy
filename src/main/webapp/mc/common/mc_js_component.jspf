@@ -1,0 +1,49 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!--
+			mc框架ui组件
+		-->
+
+		<!-- base widget -->
+		<script type="text/javascript" src="mc/common/component/base_widget.js"></script>
+
+		<!-- dialog组件 -->
+		<script type="text/javascript" src="mc/common/component/dialog/base_dialog.js"></script>
+		<script type="text/javascript" src="mc/common/component/dialog/selector_dialog.js"></script>
+		<script type="text/javascript" src="mc/common/component/dialog/grid_dialog.js"></script>
+		<script type="text/javascript" src="mc/common/component/dialog/treegrid_dialog.js"></script>
+		<script type="text/javascript" src="mc/common/component/dialog/tree_dialog.js"></script>
+
+		<!-- field组件 -->
+		<script type="text/javascript" src="mc/common/component/field/combobox.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/combobox_dynamic.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/combobox_const.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/date_field.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/money_field.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/number_field.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/dialog_field.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/grid_field.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/tree_field.js"></script>
+		<script type="text/javascript" src="mc/common/component/field/customdialog_field.js"></script>
+
+		<!-- base container -->
+		<script type="text/javascript" src="mc/common/component/container/container.js"></script>
+		<script type="text/javascript" src="mc/common/component/container/container_mgr.js"></script>
+
+		<!-- field容器 -->
+		<script type="text/javascript" src="mc/common/component/form/field_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/form/combobox_container.js"></script>
+ 		<script type="text/javascript" src="mc/common/component/form/datefield_container.js"></script>
+ 		<script type="text/javascript" src="mc/common/component/form/dialogfield_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/form/moneyfield_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/form/textarea_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/form/textfield_container.js"></script>
+
+		<!-- 布局容器 -->
+		<script type="text/javascript" src="mc/common/component/container/border_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/container/form_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/container/grid_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/container/plain_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/container/tab_container.js"></script>
+		<script type="text/javascript" src="mc/common/component/container/tree_container.js"></script>
+
+		<script type="text/javascript" src="mc/common/component/report/jr_classic_view.js"></script>

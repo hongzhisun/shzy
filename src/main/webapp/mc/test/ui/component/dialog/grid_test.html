@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	    <title>uistudy首页</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<!-- jquery-ui-css -->
+		<link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui/1.12.1/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/jqgrid/5.2.1/css/ui.jqgrid.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/alert-dialogs/1.1/css/style-jquery.alerts.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layout/1.4.4/layout-default-latest.css"/>
+ 		<link rel="stylesheet" type="text/css" href="../../../jquery/layui/2.1.5/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layer/3.1.0/theme/default/layer.css"/>
+
+		<!-- mc-core -->
+		<script type="text/javascript" src="../../../cloud/common/core/mcloud-core.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/array_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/assert_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/condition.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/date_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/format_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/hex_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/map.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/mask_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/msg_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/number_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/render_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/security_util.js"></script>
+		<script type="text/javascript" src="../../../cloud/common/util/string_util.js"></script>
+
+		<!-- jquery-core -->
+		<script type="text/javascript" src="../../../jquery/jquery-core/1.12.4/jquery-1.12.4.min.js"></script>
+
+		<!-- jquery-ui -->
+		<script type="text/javascript" src="../../../jquery/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/grid.base.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/jquery.jqGrid.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/grid.locale-cn.js"></script>
+		<script type="text/javascript" src="../../../jquery/blockui/jquery.blockUI.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/alert-dialogs/1.1/js/jquery.alerts.js"></script>
+		<script type="text/javascript" src="../../../jquery/layout/1.4.4/jquery.layout-latest.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/layui.all.js"></script>
+		<script type="text/javascript" src="../../../jquery/layer/3.1.0/layer.js"></script>
+	</head>
+	<body>
+		<button id="btnOpen0">打开对话框(文本)</button>
+		<button id="btnOpen1">打开对话框(单表格)</button>
+		<button id="btnOpen2">打开对话框(多表格)</button>
+		<button id="btnOpen3">打开对话框(多表格2)</button>
+
+		<div id="dialog1" style="display:none;">
+			<div>AAAAAAAa</div>
+		</div>
+
+		<div id="dialog_approveuser" style="width:100%; height:100%; display:none;">
+			<div id="grid_approveuser_wrap" class="ui-layout-center">
+				<table id="grid_approveuser">
+				</table>
+			</div>
+		</div>
+
+		<div id="mc_wf_rollbackuser_dialog" style="width:100%; height:100%; display:none;">
+			<div id="mc_wf_rollbackuser_grid_activity_wrap" class="ui-layout-west">
+				<table id="mc_wf_rollbackuser_grid_activity"></table>
+			</div>
+			<div id="mc_wf_rollbackuser_grid_user_wrap" class="ui-layout-center">
+				<table id="mc_wf_rollbackuser_grid_user"></table>
+			</div>
+		</div>
+
+		<div id="dialog2" style="width:100%; height:100%;">
+			<div class="ui-layout-center">
+				
+			</div>
+		</div>
+		
+		<br />
+
+		<script type="text/javascript">
+			$(function()
+			{
+				$("#grid_approveuser").jqGrid(
+				{
+					height : 100,
+					shrinkToFit : false,	/* 不允许自动调整宽度，严格按照列定义宽度显示 */
+					rownumbers : true,		/* 序号列 */
+					multiselect : true,		/* 启动复选模式 */
+					cmTemplate :
+					{
+						sortable : false
+					},
+					colModel : [
+					{
+						name : "activityID",
+						hidden : true
+					},
+					{
+						name : "activityName",
+						label : "审批环节",
+						width : 120
+					} ]
+				});
+
+				$("#btnOpen0").click(function(event)
+				{
+					layer.open(
+					{
+						type : 1,
+						title : "哈哈哈",
+						/* skin : "layui-layer-lan", */
+						area : ["600px", "320px"],
+						content : $("#dialog1"),
+						btn : ["确定", "取消"],
+						yes : function()
+						{
+							$("#dialog1").hide();
+						},
+						btn2 : function()
+						{
+							$("#dialog1").hide();
+						}
+					})
+				});
+
+				$("#btnOpen1").click(function(event)
+				{			
+					layer.open(
+					{
+						type : 1,
+						title : "请选择要提交的人",
+						/* skin : "layui-layer-lan", */
+						area : ["600px", "320px"],
+						content : $("#dialog_approveuser"),
+						success : function(dom, index)
+						{
+							/**
+							 * 打开对话框后进行布局
+							 */
+							$("#dialog_approveuser").layout(
+							{
+								onresize : function()
+								{
+									/**
+									 * layout调整后自动调整表格大小
+									 * 如果对话框不允许修改大小，则不需要调整
+									 */
+									$("#grid_approveuser").setGridWidth($("#grid_approveuser_wrap").width());
+									$("#grid_approveuser").setGridHeight($("#grid_approveuser_wrap").height() - 30);
+								}
+							});
+	
+							/**
+							 * 初次布局完成后调整表格大小
+							 */
+							$("#grid_approveuser").setGridWidth($("#grid_approveuser_wrap").width());
+							$("#grid_approveuser").setGridHeight($("#grid_approveuser_wrap").height() - 30);
+							
+							$("#grid_approveuser").clearGridData();
+							var row1 = { activityID : "1", activityName : "aaa"};
+							//$("#grid_approveuser").addRowData(row1.activityID, row1);
+							var row2 = { activityID : "2", activityName : "aaa2"};
+							//$("#grid_approveuser").addRowData(row2.activityID, row2);
+							$("#grid_approveuser").clearGridData();
+							var data = [row1, row2];
+							$("#grid_approveuser")[0].addJSONData(data);
+						}.createDelegate(this),
+						resize : true,
+						resizing : function(dom)
+						{
+							/**
+							 * 对话框大小调整后，重新布局。
+							 */
+							 $("#dialog_approveuser").layout().resizeAll();
+						}.createDelegate(this),
+						btn : ["确定", "取消"],
+						yes : function()
+						{
+//							$("#dialog_approveuser").hide();
+						},
+						btn2 : function()
+						{
+//							$("#dialog_approveuser").hide();
+						}
+					});
+				});
+
+				$("#mc_wf_rollbackuser_grid_activity").jqGrid(
+					{
+						height : 100,
+						shrinkToFit : false,	/* 不允许自动调整宽度，严格按照列定义宽度显示 */
+						rownumbers : true,		/* 序号列 */
+						multiselect : true,		/* 启动复选模式 */
+						cmTemplate :
+						{
+							sortable : false
+						},
+						colModel : [
+						{
+							name : "activityID",
+							hidden : true
+						},
+						{
+							name : "activityName",
+							label : "审批环节",
+							width : 120
+						} ]
+					});
+				$("#mc_wf_rollbackuser_grid_user").jqGrid(
+					{
+						height : 100,
+						shrinkToFit : false,	/* 不允许自动调整宽度，严格按照列定义宽度显示 */
+						rownumbers : true,		/* 序号列 */
+						multiselect : true,		/* 启动复选模式 */
+						cmTemplate :
+						{
+							sortable : false
+						},
+						colModel : [
+						{
+							name : "activityID",
+							hidden : true
+						},
+						{
+							name : "activityName",
+							label : "审批环节",
+							width : 120
+						} ]
+					});
+
+				$("#btnOpen2").click(function(event)
+					{			
+						layer.open(
+						{
+							type : 1,
+							title : "请选择要提交的人",
+							/* skin : "layui-layer-lan", */
+							area : ["600px", "320px"],
+							content : $("#mc_wf_rollbackuser_dialog"),
+							success : function(dom, index)
+							{
+								//$("#mc_wf_rollbackuser_dialog").show();
+								//$("#mc_wf_rollbackuser_grid_activity").show();
+								//$("#mc_wf_rollbackuser_grid_activity_wrap").show();
+								/**
+								 * 打开对话框后进行布局
+								 */
+								$("#mc_wf_rollbackuser_dialog").layout(
+								{
+									closable : false,
+									resizable : false,
+									slidable : false,
+									onresize : function()
+									{
+										/**
+										 * layout调整后自动调整表格大小
+										 * 如果对话框不允许修改大小，则不需要调整
+										 */
+										$("#mc_wf_rollbackuser_grid_activity").setGridWidth($("#mc_wf_rollbackuser_grid_activity_wrap").width());
+										$("#mc_wf_rollbackuser_grid_activity").setGridHeight($("#mc_wf_rollbackuser_grid_activity_wrap").height() - 30);
+										$("#mc_wf_rollbackuser_grid_user").setGridWidth($("#mc_wf_rollbackuser_grid_user_wrap").width());
+										$("#mc_wf_rollbackuser_grid_user").setGridHeight($("#mc_wf_rollbackuser_grid_user_wrap").height() - 30);
+									}
+								});
+		
+								/**
+								 * 初次布局完成后调整表格大小
+								 */
+								$("#mc_wf_rollbackuser_grid_activity").setGridWidth($("#mc_wf_rollbackuser_grid_activity_wrap").width());
+								$("#mc_wf_rollbackuser_grid_activity").setGridHeight($("#mc_wf_rollbackuser_grid_activity_wrap").height() - 30);
+								$("#mc_wf_rollbackuser_grid_user").setGridWidth($("#mc_wf_rollbackuser_grid_user_wrap").width());
+								$("#mc_wf_rollbackuser_grid_user").setGridHeight($("#mc_wf_rollbackuser_grid_user_wrap").height() - 30);
+							}.createDelegate(this),
+							resize : true,
+							resizing : function(dom)
+							{
+								/**
+								 * 对话框大小调整后，重新布局。
+								 */
+								 $("#mc_wf_rollbackuser_dialog").layout().resizeAll();
+							}.createDelegate(this),
+							btn : ["确定", "取消"],
+							yes : function()
+							{
+//								$("#dialog_approveuser").hide();
+							},
+							btn2 : function()
+							{
+//								$("#dialog_approveuser").hide();
+							}
+						});
+					});
+
+				$("#btnOpen3").click(function(event)
+				{
+					layer.open(
+					{
+						type : 1,
+						title : "请选择要提交的人",
+						/* skin : "layui-layer-lan", */
+						area : ["600px", "320px"],
+						content : $("#dialog2"),
+						success : function(dom, index)
+						{
+							$("#dialog2").layout(
+							{
+								
+							});
+						}
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

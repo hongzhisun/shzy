@@ -1,0 +1,26 @@
+<!-- 用户锁定对话框 -->
+<div class="ui-layout-north" mc-ly-split="false" mc-ly-resize="false">
+	<div class="mc-text-container">
+		<div class="mc-text-inner">
+			用户锁定后，其账号将无法登录系统，也无法操作业务。但用户信息仍会留在系统内。<br>
+			被锁定的用户，可通过【密码重置】操作，将状态恢复为“未激活状态”重新启用。
+		</div>
+	</div>
+</div>
+<div class="ui-layout-center mc-grid-container" mc-grid="gridLockUser">
+	<table id="gridLockUser"></table>
+</div>
+<div class="ui-layout-south" mc-ly-split="false" mc-ly-resize="false">
+	<div class="mc-form-container">
+		<table class="mc-form-table">
+			<colgroup>
+				<col style="width:100px;" />
+				<col />
+			</colgroup>
+			<tr>
+				<th>锁定说明*</th>
+				<td><textarea id="lockMemo" type="text" class="mc-textarea"></textarea></td>
+			</tr>
+		</table>
+	</div>
+</div>

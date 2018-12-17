@@ -1,0 +1,71 @@
+/**
+ * mc框架 - 基础样式
+ * 版本：v1.5.0
+ * 最后更新: 2018-06-29
+ */
+
+*, ::before, ::after {
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	font-size: 14px;
+}
+
+html, body {
+	height: 100%;
+	background: none;
+}
+
+body, div, input, textarea, select, header, button, h1, h2, h3, h4, label, span, p, ul {
+	font-family: Microsoft YaHei, 微软雅黑, Arial;
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+	outline: 0;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #2196cf;
+}
+
+ul, ol {
+	list-style: none;
+}
+
+img {
+	display: block;
+}
+
+input, textarea {
+	text-decoration: none;
+	outline: none;
+}
+
+:focus {
+	outline: none;
+}
+
+/**
+ * IE焦点处理
+ */
+::-moz-focus-inner {
+	border-color: transparent;
+	outline: none;
+}
+
+fieldset {
+	margin: 10px;
+	padding: 10px;
+	font-family: Microsoft YaHei, 微软雅黑, Arial;
+	font-size: 12px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #e6e6e6;
+	background-color: #FFF;
+}

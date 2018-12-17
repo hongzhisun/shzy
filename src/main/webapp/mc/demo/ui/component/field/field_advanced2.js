@@ -1,0 +1,5 @@
+
+$(function()
+{
+	mc.layout.init();
+});

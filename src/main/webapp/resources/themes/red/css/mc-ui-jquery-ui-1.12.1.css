@@ -1,0 +1,462 @@
+/*
+ * mc标准样式
+ * jQuery-UI组件
+ * 版本：v1.5.0
+ * 最后更新: 2018-06-29
+ */
+
+.ui-front {
+	z-index: 999999;
+}
+
+/**
+ * tab标签页
+ */
+.ui-tabs {
+	padding: 0;
+	box-shadow: 0px 1px 3px rgba(14,144,210,0.3);
+	-webkit-box-shadow: 0px 1px 3px rgba(14,144,210,0.3);
+	-moz-box-shadow: 0px 1px 3px rgba(14,144,210,0.3);
+}
+
+.ui-tabs .ui-tabs-nav {
+	padding: 0;
+	border-bottom-right-radius:0;
+	border-bottom-left-radius:0;
+	border-top: none;
+	border-left: none;
+	border-right:none;
+	background: #fbfbfb;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	margin: 0;
+	background: url(../images/ui/mc-jquery-ui-tab-bg) 0 0 repeat-x;
+	color: #FFF;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-right: 1px solid #22b2e7;
+}
+
+.ui-tabs .ui-tabs-nav li:hover {
+	background: url(../images/ui/mc-jquery-ui-tab-bg) 0 -56px repeat-x;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	padding: 0.5em 1em!important;
+	color: #FFF;
+	font-size: 12px;
+	outline: none;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	border: none;
+	background: url(../images/ui/mc-jquery-ui-tab-bg) 0 -28px repeat-x;
+	border-bottom-color: #fff;
+	border-top: 1px solid #00bbfe;
+	border-right: 1px solid #ebebeb;
+	padding-bottom: 0px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+	color: #333;
+}
+
+.ui-tabs .ui-tabs-panel {
+	padding: 0.5em 0.5em;
+}
+
+/**
+ * 日期控件
+ */
+.ui-datepicker-header {
+	border: 1px solid #991010;
+	background: #991010;
+}
+
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span
+{
+	background-image: url(../../../../jquery/jquery-ui/1.12.1/images/ui-icons_ffffff_256x240.png);
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	border: 1px solid #ec5a5a;
+	background: #d23f3f;
+	font-weight: normal;
+	color: #2b2b2b;
+}
+
+.ui-datepicker-title {
+	color: #fff;
+}
+
+.ui-datepicker td span,
+.ui-datepicker td a {
+	text-align: center;
+}
+
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	vertical-align: middle;
+	width: 40%;
+}
+
+.ui-datepicker-current-day > a {
+	background: #991010 !important;
+}
+
+.ui-datepicker {
+	width: 14em !important;
+	border-color: #991010 !important;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+}
+
+.ui-datepicker th {
+	padding: .7em 0em;
+}
+
+.ui-datepicker .ui-datepicker-title {
+	line-height: 18px !important;
+}
+
+.ui-datepicker-month,
+.ui-datepicker-year {
+	font-size: 12px;
+}
+
+.ui-datepicker-calendar span,
+.ui-datepicker-calendar a {
+	font-size: 12px;
+}
+
+.ui-datepicker-unselectable span {
+	border: none !important;
+}
+
+.ui-datepicker-calendar a {
+	border: none !important;
+}
+
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	width: 1.4em !important;
+	height: 1.4em !important;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 12px !important;
+	margin: 0 !important;
+}
+
+/**
+ * jquery-ui button
+ */
+.ui-button {
+	background: url(../images/mc-btn-bg.png) 0px 0px repeat-x;
+	color: #FFF;
+	border: 1px solid #22b2e7;
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+	padding: 0 15px;
+	outline: none;
+}
+
+.ui-button:hover,
+.ui-button:active,
+.ui-button:focus {
+	border: 1px solid #22b2e7;
+	color: #FFF;
+	background: url(../images/mc-btn-bg.png) 0px 0px repeat-x;
+	box-shadow: 0px 0px 3px rgba(64, 201, 201, .8);
+	-webkit-box-shadow: 0px 0px 3px rgba(64, 201, 201, .8);
+	-moz-box-shadow: 0px 0px 3px rgba(64, 201, 201, .8);
+	-o-box-shadow: 0px 0px 3px rgba(64, 201, 201, .8);
+}
+
+.ui-button:focus .ui-icon {
+	background-image: none;
+}
+
+.ui-button .ui-icon {
+	width: 13px;
+	height: 14px;
+	margin-right: 3px;
+	background: none;
+	display: none;
+}
+
+.ui-button .ui-icon {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
+	text-indent: 0;
+}
+
+/**
+ * button新增图标
+ */
+.ui-button .ui-icon-plus:before {
+	content: "\f067";
+}
+
+/**
+ * button删除图标
+ */
+.ui-button .ui-icon-trash:before {
+	content: "\f1f8";
+}
+
+/**
+ * button编辑图标
+ */
+.ui-button .ui-icon-pencil:before {
+	content: "\f044";
+}
+
+/**
+ * button查询图标
+ */
+.ui-button .ui-icon-search:before {
+	content: "\f002";
+}
+
+/**
+ * button上传图标
+ */
+.ui-button .ui-icon-arrowthickstop-1-n:before {
+	content: "\f093";
+}
+
+/**
+ * button下载图标
+ */
+.ui-button .ui-icon-arrowthickstop-1-s:before {
+	content: "\f019";
+}
+
+/**
+ * button刷新图标
+ */
+.ui-button .ui-icon-refresh:before {
+	content: "\f021";
+}
+
+.ui-button-icon-space {
+	display: none;
+}
+
+.ui-button:hover .ui-icon {
+	background: none;
+}
+
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .2em 1em .2em 2.1em;
+}
+
+/**
+ * 单复选标签
+ */
+.ui-checkboxradio-label,
+.ui-checkboxradio-radio-label {
+	height: 22px;
+	line-height: 22px;
+	padding: 0px 10px !important;
+	background: none;
+	color: #555;
+	border: none;
+	box-shadow: none;
+}
+
+.ui-checkboxradio-label:hover,
+.ui-checkboxradio-label:focus {
+	background: none;
+	color: #555;
+	border: none;
+	box-shadow: none;
+}
+
+.ui-checkboxradio-label .ui-icon-background {
+	border: 1px solid #ccc;
+	box-shadow: none;
+	background: #fbfbfb;
+}
+
+.ui-checkboxradio-checked,
+.ui-checkboxradio-checked.ui-state-active {
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+
+.ui-checkboxradio-icon {
+	width: 13px !important;
+	height: 13px !important;
+}
+
+.ui-checkboxradio-label.ui-state-active .ui-icon-background {
+	background: #0e90d2;
+	border: 4px solid #a5e1ff;
+	box-shadow: none;
+	width: 7px !important;
+	height: 7px !important;
+}
+
+.ui-checkboxradio-checked.ui-state-active:hover {
+	background: none;
+	color: #555;
+	border: none;
+}
+
+.ui-checkboxradio-checked.ui-state-active:hover .ui-icon-background {
+	background: #0e90d2;
+	border: 4px solid #a5e1ff;
+	width: 7px !important;
+	height: 7px !important;
+}
+
+.ui-checkboxradio-label.ui-state-active .ui-icon-background {
+	border-width: 4px;
+}
+
+/**
+ * 下拉选择
+ */
+.ui-selectmenu-button {
+	background: #ffffff;
+	padding: 0px 5px;
+	height: 23px;
+	line-height: 23px;
+	color: #FFF;
+	border: 1px solid #b2b2b2!important;
+	outline: none;
+}
+
+.ui-selectmenu-button:hover {
+	border: 1px solid #b2b2b2;
+	background: #ffffff;
+	box-shadow: none;
+}
+
+.ui-selectmenu-button:active {
+	border: 1px solid #991010 !important;
+	color: #555 !important;
+	background: #ffffff;
+}
+
+.ui-selectmenu-button:focus {
+	border: 1px solid #991010!important;
+	color: #555;
+	background: #ffffff;
+}
+
+.ui-selectmenu-button-open {
+	border: 1px solid #991010 !important;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+}
+
+.ui-selectmenu-button:after {
+	content: '';
+	position: absolute;
+	width: 1px;
+	height: 15px;
+	background: #ccc;
+	right: 24px;
+	top: 4px;
+}
+
+.ui-selectmenu-text {
+	font-size: 12px;
+	color: #555;
+	margin-right: 19px;
+}
+
+.ui-selectmenu-icon {
+	width: 14px;
+	background-image: url(../images/ui/mc-jquery-ui-selectmenu-dropdown.png) !important;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	margin-top: 3px !important;
+}
+
+.ui-selectmenu-menu ul {
+	border: 1px solid #991010 !important;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(153, 16, 16, .6);
+}
+
+.ui-selectmenu-menu ul li div {
+	font-size: 12px;
+}
+
+.ui-selectmenu-menu ul li div.ui-state-active {
+	background: #991010;
+	border: 1px solid #991010;
+}
+
+/**
+ * 弹出框
+ */
+.ui-dialog {
+	padding: 1px !important;
+	border: 1px solid #0180bb !important;
+}
+
+.ui-widget-overlay {
+	background: #000 !important;
+}
+
+.ui-dialog-titlebar {
+	border-radius: 0 !important;
+	-webkit-border-radius: 0 !important;
+	background: #008dcf !important;
+	border: 1px solid #0180bb !important;
+}
+
+.ui-dialog-title {
+	color: #fff;
+}
+
+.ui-dialog-titlebar-close span {
+	background-image: url(../../../../jquery/jquery-ui/1.12.1/images/ui-icons_ffffff_256x240.png) !important;
+}
+
+.ui-dialog-titlebar-close:hover {
+	background: #4ae2aa !important;
+	border: 1px solid #6df6c3 !important;
+}
+
+.ui-dialog-content {
+	background: #fff !important;
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	background:#f5f5f5!important;
+	border: 1px solid #ddd!important;
+	opacity: 1!important;
+}
+
+.mc-ComboBox-disabled span:first-child {
+	background-image: url(../images/ui/mc-jquery-ui-selectmenu-dropdown-disabled.png) !important;
+}
+
+.mc-ComboBox-disabled span {
+	color: #999;
+}

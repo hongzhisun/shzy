@@ -1,0 +1,89 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.newtouch.cloud.sm">
+	<!-- 公司实体 -->
+	<class name="com.newtouch.cloud.sm.basedata.entity.UnitEntity" table="tsm_company">
+		<id name="unitID" type="java.lang.String" column="id" />
+		<property name="unitCode" type="java.lang.String" column="code" />
+		<property name="unitName" type="java.lang.String" column="name" />
+		<property name="memo" type="java.lang.String" column="memo" />
+		<property name="status" type="java.lang.Integer" column="status" />
+		<property name="attrStatus" type="java.lang.Integer" formula="1" insert="false" update="false" />
+
+		<property name="parentID" type="java.lang.String" column="parentid" />
+		<property name="isLeaf" type="java.lang.Integer" column="isleaf" />
+		<property name="level" type="java.lang.Integer" column="intlevel" />
+		<property name="fullCode" type="java.lang.String" column="fullcode" />
+		<property name="fullName" type="java.lang.String" column="fullname" />
+		<property name="formattedCode" type="java.lang.String" column="fullcode" insert="false" update="false" />
+		<property name="formattedName" type="java.lang.String" column="fullname" insert="false" update="false" />
+
+		<property name="address" type="java.lang.String" column="address" />
+		<property name="tel" type="java.lang.String" column="tel" />
+		<property name="email" type="java.lang.String" column="email" />
+		<property name="fax" type="java.lang.String" column="fax" />
+
+		<property name="creator" type="java.lang.String" column="creator" insert="false" update="false" />
+		<property name="createDate" type="java.util.Date" column="createDate" insert="false" update="false" />
+		<property name="updator" type="java.lang.String" column="updator" insert="false" update="false" />
+		<property name="updateDate" type="java.util.Date" column="updateDate" insert="false" update="false" />
+	</class>	
+
+	<!-- 部门实体 -->
+	<class name="com.newtouch.cloud.sm.basedata.entity.DeptEntity" table="tsm_department">
+		<id name="deptID" type="java.lang.String" column="id" />
+		<property name="deptCode" type="java.lang.String" column="code" />
+		<property name="deptName" type="java.lang.String" column="name" />
+		<property name="memo" type="java.lang.String" column="memo" />
+		<property name="status" type="java.lang.Integer" column="status" />
+		<property name="attrStatus" type="java.lang.Integer" formula="1" insert="false" update="false" />
+
+		<property name="unitID" type="java.lang.String" column="compid" />
+
+		<property name="parentID" type="java.lang.String" column="parentid" />
+		<property name="isLeaf" type="java.lang.Integer" column="isleaf" />
+		<property name="level" type="java.lang.Integer" column="intlevel" />
+		<property name="fullCode" type="java.lang.String" column="fullcode" />
+		<property name="fullName" type="java.lang.String" column="fullname" />
+		<property name="formattedCode" type="java.lang.String" column="fullcode" insert="false" update="false" />
+		<property name="formattedName" type="java.lang.String" column="fullname" insert="false" update="false" />
+
+		<property name="address" type="java.lang.String" column="address" />
+		<property name="tel" type="java.lang.String" column="tel" />
+		<property name="email" type="java.lang.String" column="email" />
+		<property name="fax" type="java.lang.String" column="fax" />
+
+		<property name="creator" type="java.lang.String" column="creator" insert="false" update="false" />
+		<property name="createDate" type="java.util.Date" column="createDate" insert="false" update="false" />
+		<property name="updator" type="java.lang.String" column="updator" insert="false" update="false" />
+		<property name="updateDate" type="java.util.Date" column="updateDate" insert="false" update="false" />
+	</class>	
+
+	<!-- 用户实体 -->
+	<class name="com.newtouch.cloud.sm.basedata.entity.UserEntity" table="tsm_user">
+		<id name="userID" type="java.lang.String" column="id" />
+		<property name="userCode" type="java.lang.String" column="loginname" />
+		<property name="userName" type="java.lang.String" column="name" />
+		<property name="memo" type="java.lang.String" column="memo" />
+
+		<property name="password" type="java.lang.String" column="password" />
+
+		<property name="unitID" type="java.lang.String" column="compid" />
+		<property name="deptID" type="java.lang.String" column="deptid" />
+		
+		<property name="status" type="java.lang.Integer" column="status" />
+
+		<property name="empolyNo" type="java.lang.String" column="empolyno" />
+		<property name="tel" type="java.lang.String" column="tel" />
+		<property name="mobileTel" type="java.lang.String" column="mobile" />
+		<property name="email" type="java.lang.String" column="email" />
+
+		<property name="creator" type="java.lang.String" column="creator" insert="false" update="false" />
+		<property name="createDate" type="java.util.Date" column="createDate" insert="false" update="false" />
+		<property name="updator" type="java.lang.String" column="updator" insert="false" update="false" />
+		<property name="updateDate" type="java.util.Date" column="updateDate" insert="false" update="false" />
+	</class>
+</hibernate-mapping>

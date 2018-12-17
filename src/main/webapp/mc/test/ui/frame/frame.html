@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	    <title>Manager Cloud首页</title>
+ 		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<base href="http://localhost/mc/test/ui/frame/">
+		
+<!--   		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+		<!-- jquery-ui-css -->
+ 		<link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui/1.12.1/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/jqgrid/5.2.1/css/ui.jqgrid.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/alert-dialogs/1.1/css/style-jquery.alerts.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layout/1.4.4/layout-default-latest.css"/>
+ 		<link rel="stylesheet" type="text/css" href="../../../jquery/layui/2.1.5/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layer/3.1.0/theme/default/layer.css"/>
+
+		<!-- mc-core -->
+		<script type="text/javascript" src="../../../mc/common/core/mcloud-core.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/array_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/assert_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/condition.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/date_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/format_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/hex_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/map.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/mask_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/msg_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/number_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/render_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/security_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/string_util.js"></script>
+
+		<!-- jquery-core -->
+ 		<script type="text/javascript" src="../../../jquery/jquery-core/1.12.4/jquery-1.12.4.min.js"></script>
+		
+		<!-- jquery-ui -->
+		<script type="text/javascript" src="../../../jquery/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/grid.base.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/jquery.jqGrid.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/grid.locale-cn.js"></script>
+		<script type="text/javascript" src="../../../jquery/blockui/jquery.blockUI.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/alert-dialogs/1.1/js/jquery.alerts.js"></script>
+		<script type="text/javascript" src="../../../jquery/layout/1.4.4/jquery.layout-latest.js"></script>
+    	<script type="text/javascript" src="../../../jquery/layui/2.1.5/layui.all.js"></script>
+		<script type="text/javascript" src="../../../jquery/layer/3.1.0/layer.js"></script>
+
+<!-- layui -->
+<!-- 		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/layui.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/carousel.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/code.js"></script> -->
+<!--		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/element.js"></script>-->
+<!-- 		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/element2.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/flow.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/form.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/jquery.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/laydate.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/layedit.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/layer.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/laypage.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/laytpl.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/mobile.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/table.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/tree.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/upload.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/util.js"></script> -->
+
+		<script type="text/javascript" src="../../../mc/test/ui/frame/frame.js"></script>
+
+		<script>
+/* 		aaa = function()
+		{
+			alert("aaa");
+			var html = "<li class=\"layui-nav-item\"><a href=\"\">新菜单一</a>";
+			html += "<dd><a href=\"\">组织结构</a></dd>";
+			html += "<dd><a href=\"\">权限安全</a></dd></li>";
+
+			$("#menu").append(html);
+
+			layui.element.init(); 
+		}; */
+		</script>
+	</head>
+	<body class="layui-layout-body">
+		<div class="layui-layout layui-layout-admin">
+			<div class="layui-header">
+				<div class="layui-logo">Manager Cloud 框架</div>
+				<!-- 头部区域（可配合layui已有的水平导航） -->
+				<ul id="module" class="layui-nav layui-layout-left">
+					<li class="layui-nav-item"><a href="">首页</a></li>
+					<li class="layui-nav-item">
+						<a href="">财务管理</a>
+						<dl class="layui-nav-child">
+							<dd><a id="cw_1" href="#">账务设置</a></dd>
+							<dd><a id="cw_2" href="#">凭证管理</a></dd>
+							<dd><a id="cw_3" href="#">会计报表</a></dd>
+						</dl>
+					</li>
+					<li id="zc" class="layui-nav-item"><a href="#">资产管理</a></li>
+					<li id="ys" class="layui-nav-item"><a href="#">预算管理</a></li>
+					<li id="zi" class="layui-nav-item"><a href="#">资金管理</a></li>
+					<li id="jh" class="layui-nav-item"><a href="#">资金稽核</a></li>
+					<li id="xt" class="layui-nav-item"><a href="#">系统管理</a></li>
+				</ul>
+				<ul class="layui-nav layui-layout-right">
+					<li class="layui-nav-item">
+						<a href="javascript:;">
+							<img src="http://t.cn/RCzsdCq" class="layui-nav-img">admin
+						</a>
+						<dl class="layui-nav-child">
+							<dd>
+								<a href="">基本资料</a>
+							</dd>
+							<dd>
+								<a href="">安全设置</a>
+							</dd>
+						</dl>
+					</li>
+					<li class="layui-nav-item"><a href="">退出</a></li>
+				</ul>
+			</div>
+	
+			<div class="layui-side layui-bg-black">
+				<div class="layui-side-scroll">
+					<!-- 左侧导航区域（可配合layui已有的垂直导航） -->
+					<ul id="menu" class="layui-nav layui-nav-tree" lay-filter="test">
+						<li class="layui-nav-item layui-nav-itemed">
+							<a class="" href="javascript:;">所有商品</a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;">列表一</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">列表二</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">列表三</a>
+								</dd>
+								<dd>
+									<a href="">超链接</a>
+								</dd>
+							</dl></li>
+						<li class="layui-nav-item">
+							<a href="javascript:;">解决方案</a>
+							<dl class="layui-nav-child">
+								<dd>
+									<a href="javascript:;">列表一</a>
+								</dd>
+								<dd>
+									<a href="javascript:;">列表二</a>
+								</dd>
+								<dd>
+									<a href="">超链接</a>
+								</dd>
+							</dl></li>
+						<li class="layui-nav-item"><a href="">云市场</a></li>
+						<li class="layui-nav-item"><a href="">发布商品</a></li>
+					</ul>
+				</div>
+			</div>
+	
+			<div class="layui-body">
+				<div style="height:30px; line-height: 30px; background-color:#ccc; ">
+					<span id="breadcrumb" class="layui-breadcrumb">
+					  <a href="#">首页</a>
+					  <a href="#">国际新闻</a>
+					  <a><cite>亚太地区</cite></a>
+					  <a><cite>正文</cite></a>
+					</span>
+				</div>
+
+				<!-- 内容主体区域 -->
+<!-- 				<br />
+				<div style="padding: 15px;">内容主体区域</div>
+				<button id="btn1">增加模块</button>
+				<button id="btn2">增加菜单</button>
+				<br /> -->
+
+				<div style="position:absolute;top:30px;bottom:0;width:100%; z-index:10000;">
+					<iframe id="myIFrame" name="myIFrame" style="width:100%; height:100%; border:none" src="">这是iframe工作区</iframe>
+				</div>
+			</div>
+	
+			<div class="layui-footer">
+				<!-- 底部固定区域 -->
+				© 新致软件股份有限公司  newtouch.cn
+			</div>
+		</div>
+
+<!--  		<script type="text/javascript" src="../../../jquery/layui/2.1.5/layui.js"></script> -->
+
+<!-- 		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/element.js"></script>
+		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/layer.js"></script> -->
+<!-- 		<script type="text/javascript" src="../../../jquery/layui/2.1.5/src/lay/modules/element2.js"></script> -->
+
+ 		<script>
+/*  			layer.msg("aaaaa");
+			var html = "<li class=\"layui-nav-item\"><a href=\"\">新模块</a></li>";
+			$("#module").append(html);
+ */
+//			layui.element.init();
+
+ 
+/* 			layui.use('element', function()
+			{
+//			  	var element = layui.element;
+
+			  	$("#zc").click(function(event)
+			  	{
+			  		alert("zc");
+			  	});
+			  	$("#btn1").click(function(event)
+				{
+					var html = "<li id='abc' class='layui-nav-item'><a href=''>新模块2</a></li>";
+					$("#module").append(html);
+
+					layui.element.init();
+//					var element = new Element();
+//					element.init();
+//					nav();
+				});
+
+			  	$("#btn2").click(function(event)
+				{
+					var html = "<li class=\"layui-nav-item\"><a href=\"\">新菜单一</a></li>";
+					$("#menu").append(html);
+					layui.element.init("nav");
+				});
+			  	
+/* 				 aaa = function
+				 {
+					 alert('基础数据')
+				}; */
+			  	/*			}); */
+
+		
+/* 			var timeEnd = {}
+			  var NAV_ELEM = '.layui-nav', NAV_ITEM = 'layui-nav-item', NAV_BAR = 'layui-nav-bar'
+				  ,NAV_TREE = 'layui-nav-tree', NAV_CHILD = 'layui-nav-child', NAV_MORE = 'layui-nav-more'
+				  ,NAV_ANIM = 'layui-anim layui-anim-upbit'; */
+
+/* 			nav = function()
+			{
+				alert(2);
+				var TIME = 200, timer = {}, timerMore = {}, timeEnd = {}, follow = function(bar, nav, index)
+				{
+					var othis = $(this), child = othis.find('.' + NAV_CHILD);
+
+					if (nav.hasClass(NAV_TREE))
+					{
+						bar.css(
+						{
+							top : othis.position().top,
+							height : othis.children('a').height(),
+							opacity : 1
+						});
+					}
+					else
+					{
+						child.addClass(NAV_ANIM);
+						bar.css(
+						{
+							left : othis.position().left + parseFloat(othis.css('marginLeft')),
+							top : othis.position().top + othis.height() - 5
+						});
+
+						timer[index] = setTimeout(function()
+						{
+							bar.css(
+							{
+								width : othis.width(),
+								opacity : 1
+							});
+						}, device.ie && device.ie < 10 ? 0 : TIME);
+
+						clearTimeout(timeEnd[index]);
+						if (child.css('display') === 'block')
+						{
+							clearTimeout(timerMore[index]);
+						}
+						timerMore[index] = setTimeout(function()
+						{
+							child.addClass(SHOW)
+							othis.find('.' + NAV_MORE).addClass(NAV_MORE + 'd');
+						}, 300);
+					}
+				}
+
+				$(NAV_ELEM)
+						.each(
+							function(index)
+							{
+								var othis = $(this), bar = $('<span class="' + NAV_BAR + '"></span>'), itemElem = othis
+										.find('.' + NAV_ITEM);
+
+								// Hover滑动效果
+								if (!othis.find('.' + NAV_BAR)[0])
+								{
+									othis.append(bar);
+									itemElem.on('mouseenter', function()
+									{
+										follow.call(this, bar, othis, index);
+									}).on('mouseleave', function()
+									{
+										if (!othis.hasClass(NAV_TREE))
+										{
+											clearTimeout(timerMore[index]);
+											timerMore[index] = setTimeout(function()
+											{
+												othis.find('.' + NAV_CHILD).removeClass(SHOW);
+												othis.find('.' + NAV_MORE).removeClass(NAV_MORE + 'd');
+											}, 300);
+										}
+									});
+									othis.on('mouseleave', function()
+									{
+										clearTimeout(timer[index])
+										timeEnd[index] = setTimeout(function()
+										{
+											if (othis.hasClass(NAV_TREE))
+											{
+												bar.css(
+												{
+													height : 0,
+													top : bar.position().top + bar.height() / 2,
+													opacity : 0
+												});
+											}
+											else
+											{
+												bar.css(
+												{
+													width : 0,
+													left : bar.position().left + bar.width() / 2,
+													opacity : 0
+												});
+											}
+										}, TIME);
+									});
+								}
+
+								itemElem.each(function()
+								{
+									var oitem = $(this), child = oitem.find('.' + NAV_CHILD);
+
+									// 二级菜单
+									if (child[0] && !oitem.find('.' + NAV_MORE)[0])
+									{
+										var one = oitem.children('a');
+										one.append('<span class="' + NAV_MORE + '"></span>');
+									}
+
+									oitem.off('click', call.clickThis).on('click', call.clickThis); // 点击选中
+									oitem.children('a').off('click', call.showChild).on('click',
+										call.showChild); // 展开二级菜单
+									child.children('dd').off('click', call.clickChild).on('click',
+										call.clickChild); // 点击子菜单选中
+								});
+							});
+			} */
+
+		</script>
+	</body>
+</html>

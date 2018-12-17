@@ -1,0 +1,23 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- meta -->
+		<%@ include file="/mc/common/mc_head_meta.jspf" %>
+
+		<!-- css -->
+		<%@ include file="/mc/common/mc_css.jspf" %>
+		<%@ include file="/mc/common/mc_css_jquery.jspf" %>
+
+		<!-- js -->
+		<%@ include file="/mc/common/mc_js_jquery.jspf" %>
+		<%@ include file="/mc/common/mc_js_ui.jspf" %>
+		<%@ include file="/mc/common/mc_js.jspf" %>
+		<%@ include file="/mc/common/mc_js_component.jspf" %>
+
+		<!-- theme-config -->
+		<script type="text/javascript" src="resources/themes/theme_config.js"></script>
+
+		<!-- theme-css -->
+ 		<%@ include file="/resources/themes/theme_mc_css.jspf" %>
+
+		<!-- theme-js -->
+		<%@ include file="/resources/themes/theme_mc_js.jspf" %>

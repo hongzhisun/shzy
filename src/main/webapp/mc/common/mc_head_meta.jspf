@@ -1,0 +1,75 @@
+	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+	<!-- 
+		定义页面基本meta元素并设置base路径
+	-->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<%@ page import="com.newtouch.cloud.common.ApplicationContextUtil"%>
+	<%@ page import="com.newtouch.cloud.common.session.MCSession"%>
+	<%@ page import="com.newtouch.cloud.common.theme.ThemeConfigFactory"%>
+	<%
+		/**
+		 * 读取通用basePath
+		 */
+		String basePath = request.getScheme() + "://";
+		basePath += request.getServerName() + ":" + request.getServerPort();
+		basePath += request.getContextPath() + "/";
+
+		MCSession mcSession = new MCSession(request.getSession());
+
+		/**
+		 * 读取通用session值
+		 */
+		String session_unitid = mcSession.getCompanyID();
+		String session_unitcode = mcSession.getCompanyCode();
+		String session_unitname = mcSession.getCompanyName();
+		String session_userid = mcSession.getUserID();
+		String session_usercode = mcSession.getUserCode();
+		String session_username = mcSession.getUserName();
+
+		/**
+		 * 主题参数设置
+		 * 1) 如未启用主题切换，直接使用默认主题 
+		 * 2) 如启动主题切换，则检查Session，从Session获取当前主题Id
+		 * 3) 如Session中不存在、或无效，则从ThemeConfigFactory中获取默认主题Id
+		 * 4) ThemeConfigFactory中找不到，则直接设置主题Id=default
+		 */
+		String themeId = "";
+
+		try
+		{			
+			ThemeConfigFactory themeConfigFactory = ApplicationContextUtil.getBean(ThemeConfigFactory.class);
+			if (themeConfigFactory == null)
+			{
+				themeId = "default";
+			}
+			else
+			{
+				if (themeConfigFactory.isChangeEnable())
+				{
+					themeId = mcSession.getThemeId();
+					if (themeId == null || themeId.trim().length() <= 0 ||
+						(! themeConfigFactory.enableTheme(themeId)))
+					{
+						themeId = themeConfigFactory.getDefaultThemeId();
+					}
+				}
+				else
+				{
+					themeId = themeConfigFactory.getDefaultThemeId();
+				}
+			}
+		}
+		catch (Exception ex)
+		{
+			themeId = "default";
+		}
+
+		if (themeId == null || themeId.trim().length() <= 0)
+		{
+			themeId = "default";
+		}
+	%>
+	<base href="<%=basePath%>">

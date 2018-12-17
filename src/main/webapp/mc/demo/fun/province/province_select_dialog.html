@@ -1,0 +1,39 @@
+<!-- 省份选择对话框 -->
+<div class="ui-layout-north" mc-ly-split="false" mc-ly-resize="false">
+	<div class="mc-title-container no-padding-bottom">
+		<div class="mc-title-inner">请选择省份</div>
+	</div>
+	<div class="mc-text-container no-padding-top no-padding-bottom">
+		<div class="mc-text-inner">这是自定义对话框，允许自行布局</div>
+	</div>
+	<div class="mc-form-container no-padding-top">
+		<table class="mc-form-table">
+			<colgroup>
+				<col style="width:10%;" />
+				<col style="width:30%;" />
+				<col style="width:10%;" />
+				<col style="width:30%;" />
+				<col />
+	         </colgroup>
+			<tr>
+	            <th>编码:</th>
+	            <td><input id="provinceCodeSelect" type="text" class="mc-input"></td>
+	            <th>名称:</th>
+	            <td><input id="provinceNameSelect" type="text" class="mc-input"></td>
+	        </tr>
+			<tr>
+				<th>类型:</th>
+				<td><select id="cmbProvinceTypeSelect"></select></td>
+	            <th></th>
+	            <td colspan="2">
+					<button id="btnQuery" class="mc-btn-default mc-btn-small"><i class="fa fa-search"></i>查询</button>
+					<button id="btnRestore" class="mc-btn-default mc-btn-small"><i class="fa fa-undo"></i>清除条件</button>
+				</td>
+	        </tr>
+	    </table>
+	</div>
+</div>
+<div class="ui-layout-center mc-grid-container" mc-grid="gridProvinceSelect">
+	<table id="gridProvinceSelect"></table>
+	<div id="gridProvinceSelect_Pager"></div>
+</div>

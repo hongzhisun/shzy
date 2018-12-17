@@ -1,0 +1,50 @@
+<!-- 用户重置密码对话框 -->
+<div class="ui-layout-north" mc-ly-split="false" mc-ly-resize="false">
+	<div class="mc-text-container">
+		<div class="mc-text-inner">
+			用户重置密码后，如安全策略【重置密码后需要激活账号】开启，则用户状态会被恢复为【未激活状态】状态。<br>
+			需要用户自行登录，并在登录界面自行修改密码，才能进入系统。
+		</div>
+	</div>
+</div>
+<div class="ui-layout-center mc-grid-container" mc-grid="gridResetUser">
+	<table id="gridResetUser"></table>
+</div>
+<div class="ui-layout-south" mc-ly-split="false" mc-ly-resize="false">
+	<div class="mc-form-container">
+		<table class="mc-form-table">
+			<colgroup>
+				<col style="width:100px;" />
+				<col style="width:300px;" />
+				<col />
+			</colgroup>
+			<tr>
+				<th>重置方式*</th>
+				<td>
+					<div class="mc-radio-group">
+						<div class="mc-radio">
+							<input id="rdoType0" type="radio" name="resettype" value="0">
+							<label for="rdoType0">使用默认密码</label>
+						</div>
+						<div class="mc-radio">
+							<input id="rdoType1" type="radio" name="resettype" value="1">
+							<label for="rdoType1">输入新密码</label>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr id="tr1">
+				<th>新密码*</th>
+				<td><input id="edtPwd" type="password" class="mc-input" placeholder="请输入新密码..."></td>
+			</tr>
+			<tr id="tr2">
+				<th>确认密码*</th>
+				<td><input id="edtPwdRepeat" type="password" class="mc-input" placeholder="请重复新密码..."></td>
+			</tr>
+			<tr>
+				<th>重置密码说明*</th>
+				<td colspan="2"><textarea id="resetMemo" type="text" class="mc-textarea"></textarea></td>
+			</tr>
+		</table>
+	</div>
+</div>

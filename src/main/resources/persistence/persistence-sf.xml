@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<!-- 数据库方言 -->
+<!-- 无需设置，Hibernate自动检测
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="dialect">org.hibernate.dialect.OracleDialect</property>
+-->
+
+		<property name="show_sql">true</property>
+		<property name="format_sql">true</property>
+		<property name="jdbc.batch_size">50</property>
+
+		<!-- 实体配置文件 -->
+		<mapping resource="hbm/security.hbm.xml" />
+		<mapping resource="hbm/sm.hbm.xml" />
+	</session-factory>
+</hibernate-configuration>

@@ -1,0 +1,876 @@
+/**
+ * mc框架 - 核心样式
+ * 版本：v1.5.0
+ * 最后更新: 2018-06-29
+ */
+
+/**
+ * =============== 容器合并边框修饰 ===============
+ */
+.no-padding-bottom > div {
+	border-bottom: 0 !important;
+}
+
+.no-padding-bottom {
+	padding-bottom: 0 !important;
+}
+
+.no-padding-top {
+	padding-top: 0 !important;
+}
+
+/**
+ * =============== 标题栏容器(title) ===============
+ */
+.mc-title-container {
+	padding: 5px;
+}
+
+.mc-title-inner {
+	height: 30px;
+	line-height: 29px;
+	font-size: 13px;
+	background: #ffffff;
+	padding: 0 10px;
+	border-bottom: 1px solid #e6e6e6;
+	border-top: 3px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	border-right: 1px solid #e6e6e6;
+	-webkit-border-radius: 2px 2px 0 0;
+	-moz-border-radius: 2px 2px 0 0;
+	border-radius: 2px 2px 0 0;
+	color: #666666;
+	position: relative;
+}
+
+.mc-title-inner:before {
+	position: absolute;
+	content: '';
+	background: #2ac38a;
+	width: 2px;
+	height: 20px;
+	top: 5px;
+	left: 0;
+}
+
+.mc-title-bold {
+	font-weight: bold;
+	font-size: 13px;
+}
+
+/**
+ * =============== 工具栏容器(toolbar) ===============
+ */
+.mc-toolbar-container {
+	padding: 5px;
+}
+
+.mc-toolbar-inner {
+	background: #ffffff;
+	padding: 5px;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	overflow: hidden;
+	font-size: 0;
+}
+
+.mc-toolbar-inner span {
+	font-size: 12px;
+}
+
+.mc-form-inline {
+	display: inline-block;
+	margin: 0 2px;
+}
+
+/**
+ * 靠左对齐
+ */
+.mc-left {
+	float: left;
+}
+
+/**
+ * 靠右对齐
+ */
+.mc-right {
+	float: right;
+}
+
+/**
+ * 清除浮动
+ */
+.mc-clearfix:before,
+.mc-clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+
+/**
+ * =============== 表格组件容器(grid) ===============
+ */
+.mc-grid-container {
+	padding: 5px !important;
+}
+
+/**
+ * =============== 树组件容器和布局(tree) ===============
+ */
+.mc-tree-container {
+	padding: 5px !important;
+}
+
+.mc-tree-container div {
+	border: 1px;
+	border-style: solid;
+	border-color: #e6e6e6;
+	overflow-y: auto;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	position: absolute;
+	left: 5px;
+	right: 5px;
+	top: 5px;
+	bottom: 5px;
+	padding: 10px;
+}
+
+/**
+ * =============== tab选项卡容器 ===============
+ */
+.mc-tab-container {
+	padding: 5px !important;
+}
+
+.mc-tab-container > div {
+	margin: 0 !important;
+}
+
+/**
+ * =============== 按钮组件 ===============
+ */
+/**
+ * 标准按钮
+ */
+.mc-btn {
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 0px 15px;
+	height: 30px;
+	display: inline-block;
+	font-size: 12px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	outline: none;
+	background: #ffffff;
+	border: 1px solid #ccc;
+	color: #555;
+	margin: 2px;
+}
+
+.mc-btn i,
+.mc-btn span {
+	margin: 0 3px;
+	font-size: 13px;
+	color: #555;
+	-webkit-transition: color 0s;
+	-moz-transition: color 0s;
+	-o-transition: color 0s;
+	-ms-transition: color 0s;
+	transition: color 0s;
+}
+
+.mc-btn:hover {
+	box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-webkit-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-moz-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-o-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	border-color: #2ac38a;
+}
+
+.mc-btn:hover i,
+.mc-btn:hover span {
+	color: #555;
+}
+
+.mc-btn[disabled],
+.mc-btn[disabled]:hover {
+	opacity: .35;
+	filter: Alpha(Opacity=35);
+	box-shadow: none;
+	cursor: default;
+}
+
+/**
+ * 默认主题按钮
+ */
+.mc-btn-default {
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 0px 15px;
+	height: 30px;
+	display: inline-block;
+	font-size: 12px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	outline: none;
+	background: #2ac38a;
+	border: 1px solid #20b57d;
+	color: #FFF;
+	margin: 2px;
+}
+
+.mc-btn-default i,
+.mc-btn-default span {
+	margin: 0 3px;
+	font-size: 13px;
+	color: #FFF;
+	-webkit-transition: color 0s;
+	-moz-transition: color 0s;
+	-o-transition: color 0s;
+	-ms-transition: color 0s;
+	transition: color 0s;
+}
+
+.mc-btn-default:hover {
+	box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-webkit-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-moz-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-o-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	background: #22b47e;
+	border-color: #20b57d;
+}
+
+.mc-btn-default:hover i,
+.mc-btn-default:hover span {
+	color: #fff;
+}
+
+.mc-btn-default[disabled],
+.mc-btn-default[disabled]:hover {
+	opacity: .35;
+	filter: Alpha(Opacity=35);
+	box-shadow: none;
+	cursor: default;
+}
+
+/**
+ * warn按钮，表示警告、危险或不可撤销的操作
+ */
+.mc-btn-warn {
+	cursor: pointer;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 0px 15px;
+	height: 30px;
+	display: inline-block;
+	font-size: 12px;
+	transition: .3s;
+	-webkit-transition: .3s;
+	outline: none;
+	background: #e36159;
+	border: 1px solid #df4c43;
+	color: #FFF;
+	margin: 2px;
+}
+
+.mc-btn-warn i,
+.mc-btn-warn span {
+	margin: 0 3px;
+	font-size: 13px;
+	color: #FFF;
+	-webkit-transition: color 0s;
+	-moz-transition: color 0s;
+	-o-transition: color 0s;
+	-ms-transition: color 0s;
+	transition: color 0s;
+}
+
+.mc-btn-warn:hover {
+	box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-webkit-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-moz-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	-o-box-shadow: 0px 0px 3px rgba(51, 51, 51, .2);
+	background: #d8544b;
+	border-color: #df4c43;
+}
+
+.mc-btn-warn:hover i,
+.mc-btn-warn:hover span {
+	color: #fff;
+}
+
+.mc-btn-warn[disabled],
+.mc-btn-warn[disabled]:hover {
+	opacity: .35;
+	filter: Alpha(Opacity=35);
+	box-shadow: none;
+	cursor: default;
+}
+
+/**
+ * 蓝色按钮
+ */
+.mc-btn-blue {
+	background: #1e9fff;
+	color: #FFF;
+	border: 1px solid #1896f4;
+}
+
+.mc-btn-blue i, .mc-btn-blue span {
+	color: #FFF;
+}
+
+.mc-btn-blue:hover {
+	background: #1b99f6;
+	border-color: #1896f4;
+}
+
+.mc-btn-blue:hover i,
+.mc-btn-blue:hover span {
+	color: #fff;
+}
+
+/**
+ * 红色按钮
+ */
+.mc-btn-red {
+	background: #e36159;
+	color: #FFF;
+	border: 1px solid #df4c43;
+}
+
+.mc-btn-red i,
+.mc-btn-red span {
+	color: #FFF;
+}
+
+.mc-btn-red:hover {
+	background: #d8544b;
+	border-color: #df4c43;
+}
+
+.mc-btn-red:hover i,
+.mc-btn-red:hover span {
+	color: #fff;
+}
+
+/**
+ * 墨绿色按钮
+ */
+.mc-btn-green {
+	background: #009688;
+	color: #FFF;
+	border: 1px solid #01867a;
+}
+
+.mc-btn-green i,
+.mc-btn-green span {
+	color: #FFF;
+}
+
+.mc-btn-green:hover {
+	background: #008579;
+	border-color: #01867a;
+}
+
+.mc-btn-green:hover i,
+.mc-btn-green:hover span {
+	color: #fff;
+}
+
+/**
+ * 橙色按钮
+ */
+.mc-btn-orange {
+	background: #fac100;
+	color: #FFF;
+	border: 1px solid #f1ba00;
+}
+
+.mc-btn-orange i,
+.mc-btn-orange span {
+	color: #FFF;
+}
+
+.mc-btn-orange:hover {
+	background: #edb700;
+	border-color: #f1ba00;
+}
+
+.mc-btn-orange:hover i,
+.mc-btn-orange:hover span {
+	color: #fff;
+}
+
+/**
+ * 小按钮
+ */
+.mc-btn-small {
+	padding: 0 8px;
+	height: 23px;
+}
+
+/**
+ * 图标按钮
+ */
+.mc-btn-icon {
+	padding: 0px;
+	width: 30px;
+	height: 30px;
+}
+
+/**
+ * =============== 表单容器(form) ===============
+ */
+.mc-form-container {
+	padding: 5px;
+	overflow-y: auto !important;
+}
+
+.mc-form-table {
+	width: 100%;
+	table-layout: fixed;
+	border-spacing: 0;
+	background: #ffffff;
+	border: 1px solid #e6e6e6;
+	-webkit-border-radius: 0 0 2px 2px;
+	-moz-border-radius: 0 0 2px 2px;
+	border-radius: 0 0 2px 2px;
+}
+
+.mc-form-table th,
+.mc-form-table td {
+	font-size: 12px;
+	vertical-align: middle;
+	padding: 4px;
+}
+
+.mc-form-table tfoot th,
+.mc-form-table tfoot td {
+	border-bottom: none;
+}
+
+.mc-form-table th {
+	text-align: right;
+	font-weight: normal;
+	color: #444;
+	padding: 4px 0 !important;
+}
+
+.mc-form-table td.noborder {
+	border-bottom: 0;
+}
+
+/**
+ * =============== 表单组件 ===============
+ */
+
+/**
+ * 文本输入框
+ */
+.mc-input {
+	display: inline-block;
+	width: 120px;
+	vertical-align: middle;
+	height: 13px;
+	padding: 5px;
+	padding: 0px 5px \9;
+	height: 23px \9;
+	font-size: 12px;
+	line-height: 1.42857143;
+	line-height: 23px \9;
+	color: #555;
+	border: 1px solid #b2b2b2;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.mc-input:focus {
+	border-color: #2ac38a;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(42, 195, 138, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(42, 195, 138, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(42, 195, 138, .6);
+}
+
+.mc-input[readonly] {
+	border: 1px solid #b2b2b2;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: #e4f9f1;
+}
+
+.mc-input[disabled] {
+	border: 1px solid #b2b2b2;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: #f5f5f5;
+	color: #999;
+}
+
+/**
+ * textarea文本域（多行文本框）
+ */
+.mc-textarea {
+	display: inline-block;
+	width: 120px;
+	vertical-align: middle;
+	height: 39px;
+	padding: 5px;
+	font-size: 12px;
+	line-height: 1.42857143;
+	color: #555;
+	border: 1px solid #b2b2b2;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	resize: none;
+}
+
+.mc-textarea:focus {
+	border-color: #2ac38a;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(42, 195, 138, .6);
+	-moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(42, 195, 138, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(42, 195, 138, .6);
+}
+
+/**
+ * 数值输入组件
+ */
+.mc-number {
+	text-align: right;
+}
+
+/**
+ * 金额输入组件
+ */
+.mc-money {
+	text-align: right;
+}
+
+/**
+ * 日期选择组件
+ */
+.mc-date-field {
+	display: inline-block;
+	position: relative;
+}
+
+.mc-date-field > i {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	width: 24px;
+	height: 23px;
+	background: #f6f6f6;
+	line-height: 23px;
+	text-align: center;
+	color: #2ac38a;
+	border-left: 1px solid #ccc;
+}
+
+.mc-date-field > input {
+	padding-right: 24px;
+	width: 101px;
+}
+
+/**
+ * 日期组件禁用
+ */
+.mc-date-field[disabled] > i {
+	color: #999;
+}
+
+/**
+ * 弹窗选择组件(单按钮)
+ */
+.mc-dialog-field {
+	display: inline-block;
+	position: relative;
+}
+
+.mc-dialog-field > i {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	color: #2ac38a;
+	width: 24px;
+	height: 23px;
+	background: #f6f6f6;
+	line-height: 23px;
+	text-align: center;
+	border-left: 1px solid #ccc;
+}
+
+.mc-dialog-field > i:hover {
+	cursor: pointer;
+	background: #f9f9f9;
+}
+
+.mc-dialog-field > i:first-child {
+	right: 1px;
+}
+
+.mc-dialog-field > input {
+	padding-right: 24px;
+}
+
+/**
+ * 弹窗选择组件(双按钮)
+ */
+.mc-dialog-field2 {
+	display: inline-block;
+	position: relative;
+}
+
+.mc-dialog-field2 > i {
+	position: absolute;
+	right: 1px;
+	top: 1px;
+	color: #2ac38a;
+	width: 24px;
+	height: 23px;
+	background: #f6f6f6;
+	line-height: 23px;
+	text-align: center;
+	border-left: 1px solid #ccc;
+}
+
+.mc-dialog-field2 > i:hover {
+	cursor: pointer;
+	background: #f9f9f9;
+}
+
+.mc-dialog-field2 > i:first-child {
+	right: 25px;
+}
+
+.mc-dialog-field2[disabled] > i {
+	color: #999;
+	background: #f5f5f5;
+}
+
+.mc-dialog-field2[disabled] > i:hover {
+	cursor: default;
+	background: #f5f5f5;
+}
+
+.mc-dialog-field2 > input {
+	padding-right: 48px;
+}
+
+.mc-dialog-field2[disabled] > input {
+	background: #f5f5f5;
+	color: #999;
+}
+
+/**
+ * 单选框组、单选框
+ */
+.mc-radio-group {
+	padding-bottom: 3px;
+	display: inline-block;
+}
+
+.mc-radio-group input[type='radio'],
+.mc-radio-group label {
+	vertical-align: middle;
+}
+
+.mc-radio-group input[type='radio'] {
+	margin: 0 1px;
+}
+
+.mc-radio-group label {
+	font-size: 12px;
+}
+
+.mc-radio {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+/**
+ * 复选框组、复选框
+ */
+.mc-checkbox-group {
+	padding-bottom: 3px;
+	display: inline-block;
+}
+
+.mc-checkbox-group input[type='checkbox'],
+.mc-checkbox-group label {
+	vertical-align: middle;
+}
+
+.mc-checkbox-group input[type='checkbox'] {
+	margin: 0 1px;
+}
+
+.mc-checkbox-group label {
+	font-size: 12px;
+}
+
+.mc-checkbox {
+	display: inline-block;
+	margin: 0 5px;
+}
+
+/**
+ * =============== 对话框容器(dialog) ===============
+ */
+.mc-dialog-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: none;
+}
+
+/**
+ * =============== 字体图标尺寸===============
+ */
+.fa-lg {
+	font-size: 1.33333333em !important;
+}
+
+.fa-2x {
+	font-size: 2em !important;
+}
+
+.fa-3x {
+	font-size: 3em !important;
+}
+
+.fa-4x {
+	font-size: 4em !important;
+}
+
+.fa-5x {
+	font-size: 5em !important;
+}
+
+.fa-lg:before {
+	font-size: inherit !important;
+}
+
+.fa-2x:before {
+	font-size: inherit !important;
+}
+
+.fa-3x:before {
+	font-size: inherit !important;
+}
+
+.fa-4x:before {
+	font-size: inherit !important;
+}
+
+.fa-5x:before {
+	font-size: inherit !important;
+}
+
+/**
+ * =============== 滚动式布局容器 ===============
+ * 支持左右分布
+ */
+
+/**
+ * 流式布局容器
+ */
+.mc-flow-container {
+	overflow: hidden;
+}
+
+/**
+ * 2栏布局
+ */
+.mc-col-2 {
+	width: 50%;
+	float: left;
+}
+
+/**
+ * 3栏布局
+ */
+.mc-col-3 {
+	width: 33%;
+	float: left;
+}
+
+/**
+ * =============== 文本容器 ===============
+ */
+
+.mc-text-container {
+	padding: 5px !important;
+}
+
+.mc-text-inner {
+	border: 1px solid #e6e6e6;
+	background: #fdfdfd;
+	padding: 5px 10px;
+	font-size: 12px;
+}
+
+.mc-text-inner a,
+.mc-text-inner p {
+	font-size: 12px;
+}
+
+.mc-text-inner a {
+	color: #2ac38a;
+}
+
+.mc-text-inner p {
+	line-height: 24px;
+}
+
+/**
+ * =============== 文本容器 ===============
+ */
+.mc-report-inner-box {
+	width: 100%;
+	height: 100%;
+	position : relative;
+}
+
+.mc-report-inner-box:before {
+	position : absolute;
+	content : "";
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	border: 1px solid #e6e6e6;
+}
+
+.mc-report-inner {
+	width: 100%;
+	height: 100%;
+	border: none;
+	position : relative;
+}

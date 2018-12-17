@@ -1,0 +1,17 @@
+.ui-jqgrid .ui-jqgrid-htable th{
+    height: 19px;
+
+}
+.ui-jqgrid .ui-jqgrid-htable .ui-th-div{
+    font-size: 12px;
+}
+.ui-jqgrid tr.jqgrow td{
+    font-size: 12px;
+}
+.ui-jqgrid .ui-pg-table td,.ui-jqgrid .ui-pg-table td div{
+    font-size: 12px;
+}
+.ui-jqgrid .loading{
+    border: none;
+    background: none;
+}

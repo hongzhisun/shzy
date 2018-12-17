@@ -1,0 +1,10 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- sm-css -->
+
+		<!-- sm-common-js -->
+		<script type="text/javascript" src="mc/sm/common/sm_const.js"></script>
+		<script type="text/javascript" src="mc/sm/common/sm_render.js"></script>
+
+		<!-- sm-component -->
+		<%@ include file="/mc/sm/common/sm_component.jspf"%>

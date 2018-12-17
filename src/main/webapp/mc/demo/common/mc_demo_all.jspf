@@ -1,0 +1,16 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- css -->
+		<link rel="stylesheet" type="text/css" href="mc/demo/common/mc_demo.css" />
+
+		<!-- common -->
+		<script type="text/javascript" src="mc/demo/common/mc_demo_render.js"></script>
+
+		<!-- component -->
+		<script type="text/javascript" src="mc/demo/component/combobox/ProvinceComboBox.js"></script>
+		<script type="text/javascript" src="mc/demo/component/combobox/CityComboBox.js"></script>
+		<script type="text/javascript" src="mc/demo/component/combobox/DemoConstComboBox.js"></script>
+
+		<script type="text/javascript" src="mc/demo/component/field/ProvinceField.js"></script>
+		<script type="text/javascript" src="mc/demo/component/field/CityField.js"></script>
+		<script type="text/javascript" src="mc/demo/component/field/SupplierField.js"></script>

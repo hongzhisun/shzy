@@ -1,0 +1,8 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- mc-framework/首页主框架/css -->
+		<!-- layer -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/css/mc-ui-layer-3.1.0.css"/>
+		<!-- frame -->
+		<link mc-theme="css" rel="stylesheet" type="text/css" href="resources/themes/<%=themeId%>/frame/platform-frame.css"/>
+		

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wf-config>
+	<!-- 实体表设置 -->
+	<wfentitys>
+		<wfentity-class>com.newtouch.cloud.wfapp.wokitem.enttiy.FormMainEntity</wfentity-class>
+		<wfentity-class>com.newtouch.cloud.demo.form.entity.DemoFormCostEntity</wfentity-class>
+		<wfentity-class>com.newtouch.cloud.demo.form.entity.DemoFormCostInfoEntity</wfentity-class>
+<!--  		<wfentity-class>com.newtouch.ssc.smcs.form.entity.FormRefEntity</wfentity-class> -->
+	</wfentitys>
+	<!-- 表单设置 -->
+	<wfforms>
+		<wfform code="demo-cost" name="演示报账单-成本费用报账单">
+			<wfentity>form_main</wfentity>
+			<wfentity>demo_form_cost</wfentity>
+			<wfentity>demo_form_costinfo</wfentity>
+		</wfform>
+
+<!-- 		<wfform code="cost2" name="演示报账单-关联">
+			<wfentity>demo_formref</wfentity>
+		</wfform> -->
+	</wfforms>
+</wf-config>

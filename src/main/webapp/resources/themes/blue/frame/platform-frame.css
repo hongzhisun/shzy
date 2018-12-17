@@ -1,0 +1,158 @@
+/**
+ * mc框架首页（标准版） - 皮肤样式
+ * 版本：v1.5.0
+ * 最后更新: 2018-06-29
+ */
+
+.layui-layout-left .layui-nav-item.layui-this a:after {
+	background: #78c5ff;
+}
+
+.frame-index-module:after {
+	background: #1591ee;
+}
+
+.frame-navCover {
+	background: #1E9FFF;/*原主题色 009688*/
+}
+
+/**
+ * 顶部header背景色
+ */
+.layui-layout-admin .layui-header {
+	background: #1E9FFF;
+}
+
+.layui-layout-admin .layui-logo {
+	color: #ffffff;
+}
+
+.layui-nav.layui-layout-right:after {
+	background: #1591ee;
+}
+
+/**
+ * 一级菜单底边线色
+ */
+.layui-nav .layui-this:after,
+.layui-nav-bar,
+.layui-nav-tree .layui-nav-itemed:after {
+	background: #78c5ff;
+}
+
+/**
+ * 二级菜单左边线色
+ */
+.layui-nav-tree .layui-nav-bar {
+	background-color: #1e9fff;
+}
+
+/**
+ * 二级菜单背景色
+ */
+.layui-nav {
+	background: #c3dff4;
+}
+
+/**
+ * 三级菜单背景色
+ */
+.layui-nav-itemed .layui-nav-child {
+	background-color: #ecf4ff  !important;
+}
+
+/**
+ * 二级菜单文本色、边框色
+ */
+.layui-nav-tree .layui-nav-item a {
+	color: #1e9fff !important;
+	border-bottom: 1px solid #b8d6ed;
+}
+
+/**
+ * 三级菜单文本色
+ */
+.layui-nav-tree .layui-nav-child a {
+	color: #333333 !important;
+	border-top: none;
+	border-bottom: none;
+}
+
+/**
+ * 二级、三级菜单hover背景色
+ */
+.layui-nav-tree .layui-nav-item a:hover {
+	background-color: #c3dff4;
+	color: #333333;
+}
+
+.layui-nav-tree .layui-nav-child dd.layui-this,
+.layui-nav-tree .layui-nav-child dd.layui-this a,
+.layui-nav-tree .layui-this,
+.layui-nav-tree .layui-this > a {
+	background-color: none;
+	color: #1e9fff;
+	color: #ffffff !important;
+}
+
+.layui-nav-itemed > a .layui-nav-more {
+	border-color: transparent transparent #1e9fff!important;
+}
+
+/**
+ * 二级菜单右-下三角图标
+ */
+.layui-nav-tree .layui-nav-more {
+	border-color: #1e9fff transparent transparent;
+}
+
+/**
+ * 二级菜单右-上三角图标
+ */
+.layui-nav-itemed .layui-nav-more {
+	border-color: transparent transparent #1e9fff;
+}
+
+.layui-body {
+	border-left: none;
+	background: #f2f6f6;
+}
+
+/**
+ * 三级菜单选中背景色
+ */
+.layui-nav .layui-nav-child dd.layui-this a,
+.layui-nav-child dd.layui-this {
+	background-color: #1e9fff;
+}
+
+.layui-nav-tree .layui-nav-item[leaf='1'] {
+	background: #ddeffd;
+}
+
+.layui-nav-tree .layui-nav-item.layui-this a {
+	color: #fff !important;
+	background: #1e9fff;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	background-color: #fff !important;
+	background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+	background-color: #000 !important;
+	background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/**
+ * 收藏动画
+ */
+.ani-favorite-num {
+	color: #f39b12;
+}
+
+
+
+
+

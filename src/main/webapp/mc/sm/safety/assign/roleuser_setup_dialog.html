@@ -1,0 +1,37 @@
+<!-- 角色用户设置对话框 -->
+<div class="ui-layout-north" mc-ly-split="false" mc-ly-resize="false">
+	<div class="mc-title-container no-padding-bottom">
+		<div class="mc-title-inner">请选择用户，并分配权限</div>
+	</div>
+	<div class="mc-form-container no-padding-top">
+	    <table class="mc-form-table">
+            <colgroup>
+	            <col style="width:10%;" />
+	            <col style="width:40%;" />
+	            <col style="width:10%;" />
+	            <col style="width:40%;" />
+	            <col style="width:5%;" />
+	            <col />
+	         </colgroup>
+	        <tr>
+	            <th>公司</th>
+	            <td><input id="fieldUnitSetup" type="text" class="mc-input"></td>
+	            <th>部门</th>
+	            <td><input id="fieldDeptSetup" type="text" class="mc-input"></td>
+	        </tr>
+	        <tr>
+	            <th>用户</th>
+	            <td><input id="edtUserTextSetup" type="text" class="mc-input" placeholder="请输入姓名或登录名..."></td>
+	            <th></th>
+				<td colspan="2">
+					<button id="btnUserQuerySetup" class="mc-btn-default mc-btn-small"><i class="fa fa-search"></i>查询</button>
+					<button id="btnUserClearSetup" class="mc-btn-default mc-btn-small"><i class="fa fa-undo"></i>清除条件</button>
+				</td>
+	        </tr>
+	    </table>
+	</div>
+</div>
+<div class="ui-layout-center mc-grid-container" mc-grid="gridUnAllotUser">
+	<table id="gridUnAllotUser"></table>
+	<div id="gridUnAllotUser_pager"></div>
+</div>

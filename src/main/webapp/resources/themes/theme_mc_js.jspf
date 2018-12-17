@@ -1,0 +1,12 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+		<!-- mc-framework/core/js -->
+
+		<!-- jqgrid -->
+ 		<script mc-theme="js" type="text/javascript" src="resources/themes/<%=themeId%>/js/mc-ui-jqgrid.js"></script>
+ 
+		<!-- layer -->
+		<script mc-theme="js" type="text/javascript" src="resources/themes/<%=themeId%>/js/mc-ui-layer.js"></script>
+
+		<!-- 项目扩展样式 -->
+		<link mc-theme="js" type="text/javascript" src="resources/themes/<%=themeId%>/js/mc-extra.js"/>

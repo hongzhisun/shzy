@@ -1,0 +1,29 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+
+<!-- 		<link rel="stylesheet" type="text/css" href="mc/wf/formmanager/css/style-base.css">
+		<link rel="stylesheet" type="text/css" href="mc/wf/formmanager/css/us-jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="mc/wf/formmanager/css/us-jqgrid.css" /> -->
+		<link rel="stylesheet" type="text/css" href="mc/wf/formmanager/css/userStyle.css">
+
+		<!-- wf公用组件 -->
+		<script type="text/javascript" src="mc/wf/common/util/WfProcData.js"></script>
+		<script type="text/javascript" src="mc/wf/common/util/WfWorkData.js"></script>
+		<script type="text/javascript" src="mc/wf/component/common_attachment_panel.js"></script>
+		<script type="text/javascript" src="mc/wf/component/common_checkhistory_panel.js"></script>
+		<script type="text/javascript" src="mc/wf/component/approve_user_dialog.js"></script>
+		<script type="text/javascript" src="mc/wf/component/rollback_user_dialog.js"></script>
+		<script type="text/javascript" src="mc/wf/component/transfer_user_dialog.js"></script>
+		<script type="text/javascript" src="mc/wf/component/process_image_dialog.js"></script>
+		<script type="text/javascript" src="mc/wf/formmanager/formManagerUtil.js"></script>
+
+		<!-- 提交回退公用接口 -->
+		<script type="text/javascript" src="mc/wf/common/service/ActivityDraftService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/ActivityRefuseService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/ActivityRollbackService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/ActivitySubmitService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/ApproveUserService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/WorkItemDeleteService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/WorkItemTransformService.js"></script>
+		<script type="text/javascript" src="mc/wf/common/service/WorkItemTransmitService.js"></script>
+
+		

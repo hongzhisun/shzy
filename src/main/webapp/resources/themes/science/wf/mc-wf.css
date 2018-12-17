@@ -1,0 +1,119 @@
+/**
+ * 工作流-表单审批框架（标准版） - 皮肤样式
+ * 版本：v1.0.0
+ * 最后更新: 2017-12-25
+ */
+/*左侧按钮*/
+.wf-ff-panelFrameTop{
+	background: #009688;
+}
+.wf-ff-panelTopLeft{
+	overflow: hidden;
+	float: left;
+}
+.wf-ff-panelFrameTop ul li{
+	float: left;
+	transition: .3s;
+	-webkit-transition: .3s;
+	text-align: center;
+	position: relative;
+}
+.wf-ff-panelFrameTop ul li button{
+	outline: none;
+	width: 100%;
+	position: relative;
+	background: none;
+	display: block;
+	border: none;
+	transition: .5s;
+	-webkit-transition: .5s;
+	color: #fff;
+	cursor: pointer;
+	padding: 0 8px;
+}
+.wf-ff-panelFrameTop ul li button:hover{
+	background: #008579;
+	color: #fff;
+}
+.wf-ff-panelFrameTop ul li button:hover i{
+	animation: iconfont .2s;
+	-moz-animation: iconfont .2s;
+	-webkit-animation: iconfont .2s;
+	-o-animation: iconfont .2s;
+}
+@keyframes iconfont
+{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+
+@-moz-keyframes iconfont /* Firefox */
+{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+
+@-webkit-keyframes iconfont /* Safari �� Chrome */
+{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+
+@-o-keyframes iconfont /* Opera */
+{
+	from {transform: scale(0);}
+	to {transform: scale(1);}
+}
+.wf-ff-panelFrameTop ul li button i{
+	display: block;
+	width: 48px;
+	height: 32px;
+	margin: 0 auto;
+	line-height: 32px;
+}
+.wf-ff-panelFrameTop ul li button span{
+	display: block;
+	font-size: 12px;
+	margin-bottom: 7px;
+}
+.wf-ff-panelTopRight{
+	float: right;
+}
+.wf-ff-panelTopCenter{
+	position: absolute;
+	text-align: center;
+	right: 64px;
+}
+.wf-ff-panelTopCenter h1{
+	font-size: 20px;
+	color: #fff;
+	line-height: 55px;
+}
+.wf-ff-panelFrameBottom{
+	padding: 0 10px;
+	position: absolute;
+	left: 0;
+	right:0;
+	background: #f2f6f6;
+	border-top: 1px solid #e6e6e6;
+	-webkit-box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+	-moz-box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+	box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+}
+.wf-ff-slide-bar{
+	position: absolute;
+	width: 100px;
+	cursor: pointer;
+	text-align: center;
+	left: 50%;
+	height: 25px;
+	line-height: 25px;
+	margin-left: -50px;
+	top: -26px;
+	border-radius: 3px 3px 0 0;
+	background: #f2f6f6;
+	border: 1px solid #e6e6e6;
+	border-bottom: 0;
+	-webkit-box-shadow: 0 -2px 10px rgba(0, 0, 0, .05);
+	-moz-box-shadow: 0 -2px 10px rgba(0, 0, 0, .05);
+}

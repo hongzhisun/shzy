@@ -1,0 +1,7 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!--
+			mc框架标准css样式表
+		-->
+
+		<!-- font-awesome -->
+		<link rel="stylesheet" type="text/css" href="thirdparty/font-awesome/4.7.0/css/font-awesome.min.css" />

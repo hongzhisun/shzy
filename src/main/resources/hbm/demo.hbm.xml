@@ -1,0 +1,17 @@
+<?xml version="1.0"?>  
+<!DOCTYPE hibernate-mapping PUBLIC   
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.newtouch.test">
+	<class name="com.newtouch.demo.defaultdata.entity.AEntity" table="test_a">
+		<id name="id" type="java.lang.String" column="aid" />
+		<property name="code" type="java.lang.String" column="acode" />
+		<property name="name" type="java.lang.String" column="aname" />
+	</class>
+	<class name="com.newtouch.demo.defaultdata.entity.BEntity" table="test_b">
+		<id name="id" type="java.lang.String" column="bid" />
+		<property name="code" type="java.lang.String" column="bcode" />
+		<property name="name" type="java.lang.String" column="bname" />
+	</class>
+</hibernate-mapping>

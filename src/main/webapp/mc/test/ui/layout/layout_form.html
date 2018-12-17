@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+	    <title>测试form布局</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+ 		<base href="http://localhost/mc/test/ui/layout/">
+
+		<!-- jquery-ui-css -->
+		<link rel="stylesheet" type="text/css" href="../../../jquery/jquery-ui/1.12.1/jquery-ui.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/jqgrid/5.2.1/css/ui.jqgrid.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/alert-dialogs/1.1/css/style-jquery.alerts.css"/>
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layout/1.4.4/layout-default-latest.css"/>
+ 		<link rel="stylesheet" type="text/css" href="../../../jquery/layui/2.1.5/css/layui.css" />
+		<link rel="stylesheet" type="text/css" href="../../../jquery/layer/3.1.0/theme/default/layer.css"/>
+
+		<!-- mc基础样式 -->
+ 		<link rel="stylesheet" type="text/css" href="../../../resources/themes/default/css/mc-style-base.css"/>
+		<!-- mc-core样式-->
+ 		<link rel="stylesheet" type="text/css" href="../../../resources/themes/default/css/mc-core.css"/>
+		<!-- mc css字体样式 -->
+		<link rel="stylesheet" type="text/css" href="../../../resources/themes/default/css/fonts/css/font-awesome.min.css"/>
+
+		<!-- mc-core -->
+		<script type="text/javascript" src="../../../mc/common/core/mcloud-core.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/array_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/assert_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/condition.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/date_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/format_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/hex_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/layout_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/map.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/mask_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/msg_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/number_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/render_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/security_util.js"></script>
+		<script type="text/javascript" src="../../../mc/common/util/string_util.js"></script>
+
+		<!-- jquery-core -->
+		<script type="text/javascript" src="../../../jquery/jquery-core/1.12.4/jquery-1.12.4.min.js"></script>
+
+		<!-- jquery-plugins -->
+		<script type="text/javascript" src="../../../jquery/plugins/jquery.resize/jquery.ba-resize.min.js"></script>
+
+		<!-- jquery-ui -->
+		<script type="text/javascript" src="../../../jquery/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/grid.base.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/jquery.jqGrid.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/jqgrid/5.2.1/js/grid.locale-cn.js"></script>
+		<script type="text/javascript" src="../../../jquery/blockui/jquery.blockUI.min.js"></script>
+		<script type="text/javascript" src="../../../jquery/alert-dialogs/1.1/js/jquery.alerts.js"></script>
+		<script type="text/javascript" src="../../../jquery/layout/1.4.4/jquery.layout-latest.js"></script>
+ 		<script type="text/javascript" src="../../../jquery/layui/2.1.5/layui.all.js"></script>
+		<script type="text/javascript" src="../../../jquery/layer/3.1.0/layer.js"></script>
+
+		<script type="text/javascript" src="../../../mc/test/ui/layout/layout_form.js"></script>
+	</head>
+	<body>
+		<span>测试form布局</span>
+		<button id="btnTest1">布局input</button>
+		<button id="btnTest2">测试按钮2</button>
+		<button id="btnTest3">布局selectmenu</button>
+		<br>
+
+		<div class="mc-title-container">form布局，多列(定宽布局方式)</div>
+
+		<div class="mc-form-container" mc-container="form">
+		    <table class="mc-form-table">
+	            <colgroup>
+		            <col style="width:120px;" />
+		            <col style="width:200px;" />
+		            <col style="width:120px;" />
+		            <col style="width:100px;" />
+		            <col style="width:120px;" />
+		            <col style="width:300px;" />
+		            <col />
+		         </colgroup>
+		        <tr>
+		            <th title="输入字段1">输入字段</th>
+		            <td id="bbb" colspan="">
+		                <input id="aaa" type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		        </tr>
+		        <tr>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		        </tr>
+		    </table>
+		</div>
+	
+		<br />
+		<div class="mc-title-container">百分比布局</div>
+		<div class="mc-form-container" mc-container="form">
+			<!-- cellpadding、cellspacing可以改用css -->
+		    <table cellpadding="0" cellspacing="0" class="mc-form-table">
+	            <colgroup>
+	            	<col style="width:10%;" />
+		            <col style="width:20%;" />
+	            	<col style="width:5%;" />
+		            <col style="width:25%;" />
+	            	<col style="width:10%;" />
+		            <col style="width:20%;" />
+		            <col />
+		         </colgroup>
+		        <tr>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段" >输入字段</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段" >输入字段</th>
+		            <td id="td1" colspan="">
+		                <input id="input1" type="text" class="mc-input" title="">
+		            </td>
+		        </tr>
+		        <tr>
+		            <th title="输入字段1" >输入字段1</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="输入字段2" >输入字段2</th>
+		            <td colspan="">
+		                <div class="mc-date-field">
+		                    <i class="fa fa-calendar"></i>
+		                    <input id="date" type="text" class="mc-input" title="">
+		                </div>
+		            </td>
+		            <th title="省份" >省份</th>
+		            <td colspan="">
+		                <select id="cmbJQueryUI2">
+		                    <option value="">请选择...</option>
+		                    <option value="p01">江苏</option>
+		                    <option value="p02">浙江</option>
+		                    <option value="p03">福建</option>
+		                    <option value="p04">广东</option>
+		                </select>
+		            </td>
+		        </tr>
+		        <tr>
+		            <th title="性别">性别</th>
+		            <td colspan="">
+		                <div class="mc-radio-group">
+		                    <div class="mc-radio">
+		                    	<input id="radio1" type="radio" name="radiogroup" value="0">
+		                    	<label class="mc_label" for="radio1">男</label>
+		                    </div>
+		                    <div class="mc-radio"><input id="radio2" type="radio" name="radiogroup" value="1"><label class="mc_label" for="radio2">女</label></div>
+		                    <div class="mc-radio"><input id="radio3" type="radio" name="radiogroup" value="-1"><label class="mc_label" for="radio3">其他</label></div>
+		                </div>
+		            </td>
+		            <th title="输入字段5" >输入字段5</th>
+		            <td colspan="">
+		                <input type="text" class="mc-input" title="">
+		            </td>
+		            <th title="品牌" >品牌</th>
+		            <td colspan="">
+		                <div class="mc-checkbox-group">
+		                    <div class="mc-checkbox">
+		                    	<input id="checkbox2" type="checkbox" name="brand" value="1">
+		                    	<label for="checkbox2">苹果</label>
+		                    </div>
+		                    <div class="mc-checkbox"><label for="checkbox3">三星</label><input id="checkbox3" type="checkbox" name="brand" value="2"></div>
+		                    <div class="mc-checkbox"><input id="checkbox4" type="checkbox" name="brand" value="3"><label for="checkbox4">华为</label></div>
+		                    <div class="mc-checkbox"><input id="checkbox5" type="checkbox" name="brand" value="4"><label for="checkbox5">小米</label></div>
+		                </div>
+		            </td>
+		        </tr>
+		    </table>
+		</div>
+ 	</body>
+</html>

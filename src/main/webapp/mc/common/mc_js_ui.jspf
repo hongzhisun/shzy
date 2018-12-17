@@ -1,0 +1,35 @@
+		<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+		<!--
+			mc框架第三方标准UI组件
+		-->
+		
+		<!-- jquery-ui -->
+		<script type="text/javascript" src="jquery/jquery-ui/1.12.1/jquery-ui.min.js"></script>
+
+		<!-- jqgrid -->
+		<script type="text/javascript" src="jquery/jqgrid/5.2.1/js/grid.base.js"></script>
+		<script type="text/javascript" src="jquery/jqgrid/5.2.1/js/jquery.jqGrid.min.js"></script>
+		<script type="text/javascript" src="jquery/jqgrid/5.2.1/js/grid.locale-cn.js"></script>
+
+		<!-- ztree -->
+		<script type="text/javascript" src="jquery/ztree/3.5.29/js/jquery.ztree.all.min.js"></script>
+		<script type="text/javascript" src="jquery/ztree/3.5.29/js/jquery.ztree.exhide.min.js"></script>
+
+		<!-- layout -->
+		<script type="text/javascript" src="jquery/layout/1.4.4/jquery.layout-latest.js"></script>
+
+		<!-- layui -->
+		<!-- 	
+		<script type="text/javascript" src="jquery/layui/2.1.5/layui.all.js"></script>
+		-->
+		<!-- 	
+		<script type="text/javascript" src="jquery/layui/2.1.5/src/layui.js"></script>
+		<script type="text/javascript" src="jquery/layui/2.1.5/src/lay/modules/element.js"></script>
+		-->
+		<script type="text/javascript" src="jquery/layui/2.2.6/src/layui.js"></script>
+		<script type="text/javascript" src="jquery/layui/2.2.6/src/lay/modules/element.js"></script>
+		<script type="text/javascript" src="jquery/layui/2.2.6/src/lay/modules/laypage.js"></script>
+
+		<!-- layer -->
+		<script type="text/javascript" src="jquery/layer/3.1.0/layer.js"></script>
+
